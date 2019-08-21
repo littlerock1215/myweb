@@ -1,0 +1,706 @@
+@charset "UTF-8";
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/*
+$mobile: (
+  'min-width': 0,
+);
+
+$pad: (
+  'min-width': 768px,
+);
+*/
+/* perfect-scrollbar v0.6.11 */
+.ps-container {
+  -ms-touch-action: none;
+  touch-action: none;
+  overflow: hidden !important;
+  -ms-overflow-style: none; }
+
+@supports (-ms-overflow-style: none) {
+  .ps-container {
+    overflow: auto !important; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ps-container {
+    overflow: auto !important; } }
+
+.ps-container.ps-active-x > .ps-scrollbar-x-rail,
+.ps-container.ps-active-y > .ps-scrollbar-y-rail {
+  display: block;
+  background-color: transparent; }
+
+.ps-container.ps-in-scrolling {
+  pointer-events: none; }
+
+.ps-container.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps-container.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail > .ps-scrollbar-x {
+  background-color: #999; }
+
+.ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+  background-color: #999; }
+
+.ps-container > .ps-scrollbar-x-rail {
+  display: none;
+  position: absolute;
+  /* please don't change 'position' */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  opacity: 0;
+  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  -moz-transition: background-color .2s linear, opacity .2s linear;
+  -o-transition: background-color .2s linear, opacity .2s linear;
+  transition: background-color .2s linear, opacity .2s linear;
+  bottom: 3px;
+  /* there must be 'bottom' for ps-scrollbar-x-rail */
+  height: 8px; }
+
+.ps-container > .ps-scrollbar-x-rail > .ps-scrollbar-x {
+  position: absolute;
+  /* please don't change 'position' */
+  background-color: #aaa;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: background-color .2s linear;
+  -moz-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+  bottom: 0;
+  /* there must be 'bottom' for ps-scrollbar-x */
+  height: 8px; }
+
+.ps-container > .ps-scrollbar-y-rail {
+  display: none;
+  position: absolute;
+  /* please don't change 'position' */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  opacity: 0.2;
+  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  -moz-transition: background-color .2s linear, opacity .2s linear;
+  -o-transition: background-color .2s linear, opacity .2s linear;
+  transition: background-color .2s linear, opacity .2s linear;
+  right: 3px;
+  /* there must be 'right' for ps-scrollbar-y-rail */
+  width: 8px; }
+
+.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+  position: absolute;
+  /* please don't change 'position' */
+  background-color: #aaa;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: background-color .2s linear;
+  -moz-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+  right: 0;
+  /* there must be 'right' for ps-scrollbar-y */
+  width: 8px; }
+
+.ps-container:hover.ps-in-scrolling {
+  pointer-events: none; }
+
+.ps-container:hover.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps-container:hover.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail > .ps-scrollbar-x {
+  background-color: #999; }
+
+.ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+  background-color: #999; }
+
+.ps-container:hover > .ps-scrollbar-x-rail,
+.ps-container:hover > .ps-scrollbar-y-rail {
+  opacity: 0.6; }
+
+.ps-container:hover > .ps-scrollbar-x-rail:hover {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps-container:hover > .ps-scrollbar-x-rail:hover > .ps-scrollbar-x {
+  background-color: #999; }
+
+.ps-container:hover > .ps-scrollbar-y-rail:hover {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps-container:hover > .ps-scrollbar-y-rail:hover > .ps-scrollbar-y {
+  background-color: #999; }
+
+header {
+  margin: 0 auto; }
+
+body {
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Adobe 繁黑體 Std B", "儷黑 Pro"; }
+  body.open {
+    overflow: hidden; }
+
+body, html {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+header {
+  padding: 20px 20px 20px 20px;
+  display: block;
+  position: fixed;
+  background-color: white;
+  z-index: 999;
+  width: 100%; }
+  header a.logo {
+    background: url(../images/logo.gif) no-repeat;
+    background-size: 247.5px 31.5px;
+    background-position: 0 0;
+    width: 247.5px;
+    height: 31.5px;
+    text-decoration: none;
+    display: inline-block; }
+  header ul.nav_mainpage {
+    float: right;
+    margin-top: 0px;
+    margin-right: 0px; }
+    header ul.nav_mainpage li {
+      float: left; }
+      header ul.nav_mainpage li a {
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        font-size: 20px;
+        color: black;
+        margin-right: 40px;
+        font-weight: 600; }
+
+.main_userpage {
+  padding: 120px 20px 32px;
+  background: url(../images/bg.png) no-repeat;
+  background-size: 100% auto;
+  background-position: 0 770px; }
+
+p.subtitle {
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: left;
+  font-weight: 600; }
+
+.trading_service_block {
+  position: relative; }
+  .trading_service_block p.title {
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    font-weight: 600; }
+  .trading_service_block p.content_font {
+    font-size: 18px;
+    line-height: 22px;
+    width: 550px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    font-weight: 600; }
+    .trading_service_block p.content_font:last-child {
+      margin-bottom: 22px; }
+  .trading_service_block a.get_price {
+    width: 540px;
+    border-radius: 5px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    line-height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 24px;
+    margin-left: 80px; }
+  .trading_service_block a.get_price_bottom {
+    width: 540px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    line-height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 24px;
+    border: 1px solid black;
+    margin-left: 80px; }
+  .trading_service_block p.trading_time {
+    font-size: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .trading_service_block img.coin_top {
+    position: absolute;
+    top: -20px;
+    right: 100px;
+    width: 240px; }
+  .trading_service_block img.coin_middle {
+    position: absolute;
+    top: 150px;
+    right: 310px;
+    width: 240px; }
+  .trading_service_block img.coin_bottom {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+    width: 240px; }
+
+.light_box_wrap.active {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  overflow: auto; }
+
+.light_box {
+  display: none;
+  width: calc( 100% - 300px);
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 10px;
+  border: 1px solid #ccc; }
+  .light_box.active {
+    display: block; }
+  .light_box .box_top {
+    text-align: center;
+    height: 100px;
+    background-color: #121212;
+    font-size: 34px;
+    line-height: 42px;
+    padding-top: 16px;
+    color: #fefefe;
+    position: relative; }
+    .light_box .box_top a.cancel {
+      text-decoration: none;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: url(../images/cancel-icon.png) no-repeat;
+      background-size: 50px 50px;
+      background-position: 0 0;
+      position: absolute;
+      right: 24px;
+      top: 24px; }
+  .light_box form.apply_form {
+    background-color: white;
+    padding-top: 29px;
+    padding-left: calc((100% - 740px) / 2);
+    padding-right: calc((100% - 740px) / 2); }
+    .light_box form.apply_form select {
+      width: 600px;
+      height: 68px;
+      display: inline;
+      vertical-align: text-bottom;
+      padding-left: 10px;
+      border-radius: 5px;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background: url(../images/arrow.png) no-repeat scroll right center transparent;
+      background-position: calc(100% - 14px); }
+      .light_box form.apply_form select:focus {
+        outline: none; }
+    .light_box form.apply_form select::-ms-expand {
+      display: none; }
+    .light_box form.apply_form button {
+      width: 600px;
+      margin-left: calc((100% - 600px) / 2);
+      background-color: black;
+      color: white;
+      font-size: 24px;
+      line-height: 32px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      border: 0;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      margin-top: 46px; }
+
+p.first_content {
+  font-size: 20px;
+  line-height: 24px;
+  color: #515151;
+  margin-bottom: 26px; }
+
+p.title_p {
+  color: #121212;
+  font-size: 24px;
+  line-height: 38px;
+  display: inline-block;
+  width: 100px;
+  margin-top: 46px;
+  font-weight: 600; }
+  p.title_p span {
+    font-size: 16px; }
+
+p.purchase_p {
+  color: #121212;
+  font-size: 24px;
+  display: inline-block;
+  width: 100px;
+  margin-top: 46px;
+  font-weight: 600; }
+  p.purchase_p span {
+    font-size: 14px;
+    line-height: 14px; }
+
+input.box_input {
+  display: inline;
+  width: 600px;
+  border: 0;
+  border-bottom: 1px solid #515151;
+  height: 34px;
+  font-size: 30px; }
+  input.box_input:focus {
+    outline: none; }
+
+textarea.box_input {
+  display: inline-block;
+  width: 600px;
+  height: auto;
+  border: 0;
+  border-bottom: 1px solid #515151;
+  font-size: 30px;
+  min-height: 34px; }
+  textarea.box_input:focus {
+    outline: none; }
+
+#how_to_trade_block {
+  position: relative;
+  margin-top: 440px;
+  padding-top: 60px; }
+  #how_to_trade_block ul {
+    margin-top: 40px;
+    margin-left: 180px; }
+    #how_to_trade_block ul li {
+      margin-bottom: 24px; }
+      #how_to_trade_block ul li img {
+        width: 40px;
+        margin-top: 6px; }
+      #how_to_trade_block ul li p.li_p_header {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 22px;
+        margin-left: 30px;
+        line-height: 28px;
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 16px; }
+      #how_to_trade_block ul li p {
+        margin-left: 72px;
+        margin-bottom: 10px;
+        max-width: 980px; }
+  #how_to_trade_block .price_block {
+    margin-left: calc((100% - 530px) / 2); }
+    #how_to_trade_block .price_block a.get_price_tradeblock {
+      width: 260px;
+      border-radius: 5px;
+      background-color: black;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      line-height: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: 24px;
+      margin-right: 10px;
+      display: inline-block; }
+    #how_to_trade_block .price_block a.get_price_bottom_tradeblock {
+      width: 260px;
+      border-radius: 5px;
+      background-color: white;
+      text-align: center;
+      color: black;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      line-height: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: 24px;
+      border: 1px solid black;
+      display: inline-block; }
+  #how_to_trade_block img.circle_left {
+    position: absolute;
+    left: 120px;
+    top: -400px;
+    width: 190px; }
+  #how_to_trade_block img.circle_middle {
+    position: absolute;
+    right: 50%;
+    -webkit-transform: translateX(110px);
+    -ms-transform: translateX(110px);
+    transform: translateX(110px);
+    top: -240px;
+    width: 220px; }
+  #how_to_trade_block img.circle_right {
+    position: absolute;
+    right: 200px;
+    top: -400px;
+    width: 190px; }
+
+#quote_block {
+  text-align: center;
+  background: url(../images/bg.png) no-repeat;
+  background-size: 100% auto;
+  background-position: 0 270px;
+  padding-top: 80px; }
+  #quote_block ul {
+    width: 680px;
+    height: 500px;
+    margin: -70px auto 0; }
+    #quote_block ul div {
+      text-align: center;
+      padding-top: 8px;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 18px;
+      background-color: #dcdcdc;
+      padding-bottom: 8px; }
+      #quote_block ul div p {
+        display: inline-block;
+        width: 120px; }
+    #quote_block ul li {
+      text-align: center;
+      padding-top: 8px;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 18px;
+      padding-bottom: 8px; }
+      #quote_block ul li p {
+        display: inline-block;
+        color: black;
+        vertical-align: middle;
+        width: 120px; }
+    #quote_block ul li:nth-child(even) {
+      background-color: white; }
+    #quote_block ul li:nth-child(odd) {
+      background-color: #eeeeee; }
+  #quote_block .p_block {
+    margin-top: 90px;
+    margin-left: 100px; }
+    #quote_block .p_block p {
+      display: inline-block;
+      font-size: 10px;
+      text-align: left;
+      margin-right: 16px; }
+  #quote_block a.get_price_quoteblock {
+    width: 260px;
+    border-radius: 5px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    line-height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 24px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 60px; }
+
+#faqs_block {
+  padding-top: 60px; }
+  #faqs_block div {
+    margin-left: calc((100% - 800px ) / 2);
+    width: 800px; }
+    #faqs_block div div {
+      background-color: #eeeeee;
+      margin-bottom: 8px;
+      padding-bottom: 16px;
+      padding-right: 30px; }
+      #faqs_block div div a {
+        background: url(../images/icon.png) no-repeat;
+        background-size: 30px 30px;
+        background-position: 0 0;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 16px;
+        margin-left: 16px;
+        margin-right: 14px; }
+        #faqs_block div div a.active {
+          background: url(../images/pulse.png) no-repeat; }
+      #faqs_block div div p.question {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+        margin-bottom: 24px;
+        font-size: 22px;
+        line-height: 33px; }
+      #faqs_block div div p.answer {
+        margin-left: 64px;
+        margin-bottom: 12px;
+        font-size: 18px;
+        line-height: 22px; }
+
+#contact_block {
+  position: relative;
+  background: url(../images/bg.png) no-repeat;
+  background-size: 100% auto;
+  background-position: 0 270px;
+  padding-top: 60px; }
+  #contact_block iframe {
+    margin-left: calc((100% - 800px) / 2); }
+  #contact_block .small_font {
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: calc((100% - 800px) / 2);
+    margin-bottom: 17px; }
+  #contact_block a {
+    background: url(../images/fb-icon-fake.png) no-repeat;
+    background-size: 40px 40px;
+    background-position: 0 0;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 750px; }
+  #contact_block a.fb1 {
+    right: calc((100% - 800px) / 2); }
+  #contact_block a.fb2 {
+    right: calc(((100% - 800px) / 2) + 60px); }
+
+footer {
+  margin-top: 93px;
+  position: relative; }
+  footer h6 {
+    text-align: center;
+    margin-bottom: 34px; }
+  footer h4 {
+    text-align: center;
+    font-size: 14px;
+    line-height: 27px;
+    margin-left: calc((100% - 1000px) / 2);
+    margin-right: calc((100% - 1000px) / 2);
+    margin-bottom: 28px; }
+    footer h4 a {
+      text-decoration: none;
+      display: inline;
+      border-bottom: 1px solid #000000;
+      color: #000000; }
+  footer a.bottom_item1 {
+    position: absolute;
+    top: 0;
+    right: 291px;
+    background: url(../images/footer_link.png) no-repeat;
+    background-size: 15px 15px;
+    background-position: 110px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    display: block;
+    color: #000000; }
+  footer a.bottom_item2 {
+    position: absolute;
+    top: 0;
+    right: 159px;
+    background: url(../images/footer_link.png) no-repeat;
+    background-size: 15px 15px;
+    background-position: 100px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    width: 120px;
+    text-decoration: none;
+    display: block;
+    color: #000000; }
+  footer a.bottom_item3 {
+    position: absolute;
+    top: 0;
+    right: 43px;
+    background: url(../images/footer_link.png) no-repeat;
+    background-size: 15px 15px;
+    background-position: 86px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    width: 110px;
+    text-decoration: none;
+    display: block;
+    color: #000000; }
+
+.jconfirm-box {
+  width: 300px; }
+
+label.error {
+  display: block;
+  margin-top: 4px;
+  margin-left: 104px;
+  color: red; }
