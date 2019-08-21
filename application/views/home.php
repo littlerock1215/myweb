@@ -69,7 +69,7 @@
     <div class="main_userpage">
         <div class="trading_service_block">
 
-            <p class="title">YY線上換匯所<br/>OTC trading service </p>
+            <p class="title">線上換匯所<br/>OTC trading service </p>
             <p class="content_font">BTC Shop是由一群值得信賴的經紀人團隊組成，<br/> 團員擁有卓越的比特幣及加密貨幣知識。<br/> 我們在香港交易比特幣已超過5年，<br/>並在可靠性，經濟性，安全性和便利性方面的優勢引領行業。</p>
             <p class="content_font">The BTC Shop is made up of a team of trusted brokers  with excellent bitcoin and cryptocurrency knowledge. We have been trading Bitcoin in Hong Kong for more than 5 years and lead the industry in terms of reliability affordability,safety and convenience.</p>
             <a href="#" class="get_price">取得報價<br/>Contact us</a>
