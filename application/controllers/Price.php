@@ -37,7 +37,14 @@ class Price extends CI_Controller {
     // }
 
     public function test(){
-        $data['amount'] = 20;
+        //$data['amount'] = 20;
+        $currency_tobuy = $this->input->post('currency_tobuy');
+        $currency_topay = $this->input->post('currency_topay');
+        $amount = $this->input->post('amount');
+        
+        $data['amount'] = $amount;
+        $data['currency_tobuy'] = $currency_tobuy;
+        $data['currency_topay'] = $currency_topay;
         $this->load->view('mail_template/price_mail',$data);
     }
 
@@ -65,6 +72,8 @@ class Price extends CI_Controller {
                 $mail_info['subject']= '報價單';
 
                 $data['amount'] = $amount;
+                $data['currency_tobuy'] = $currency_tobuy;
+                $data['currency_topay'] = $currency_topay;
                 $data['content'] = '以下是報價單及轉帳地址';
                 $mail_info['body']= $this->load->view('mail_template/price_mail',$data,true);
 

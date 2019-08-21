@@ -141,7 +141,7 @@
                     </form>
                 </div>
             </div>
-            <img class="circle_left" src="/images/circle_left_new.png">
+            <img class="circle_left" src="/images/circle_left_new@2x.png">
             <img class="circle_middle" src="/images/circle_middle_new.png">
             <img class="circle_right" src="/images/circle_right_new.png">
         </div>
