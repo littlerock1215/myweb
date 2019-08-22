@@ -38,13 +38,25 @@ class Price extends CI_Controller {
 
     public function test(){
         //$data['amount'] = 20;
+        $email = $this->input->post('email');
         $currency_tobuy = $this->input->post('currency_tobuy');
         $currency_topay = $this->input->post('currency_topay');
         $amount = $this->input->post('amount');
         
         $data['amount'] = $amount;
+        $data['email'] = $email;
         $data['currency_tobuy'] = $currency_tobuy;
         $data['currency_topay'] = $currency_topay;
+        $data['price_data'] = $this->get_price();
+
+        //$api_data['Mode'] = 'InvestReward';
+        //$data['record'] =  $this->oauth->auth_request('UiTransactionRecord','GET',$api_data);
+        
+        // $data['result'] = $this->db->select('id, name, symbol, quote')
+        //                             ->from('news')
+        //                             ->order_by('id','desc')
+        //                             ->get();
+
         $this->load->view('mail_template/price_mail',$data);
     }
 
@@ -71,6 +83,8 @@ class Price extends CI_Controller {
                 $this->load->model('mail_model');
                 $mail_info['subject']= '報價單';
 
+                $data['price_data'] = $this->get_price();
+                $data['email'] = $email;
                 $data['amount'] = $amount;
                 $data['currency_tobuy'] = $currency_tobuy;
                 $data['currency_topay'] = $currency_topay;
@@ -93,5 +107,47 @@ class Price extends CI_Controller {
         // }else{
         //     redirect(base_url(),'refresh');
         // }
+    }
+    public function get_price()
+    {
+        $url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest';
+        $parameters = [
+            'start' => '1',
+            'limit' => '20',
+            'convert' => 'USD'
+        ];
+
+        $headers = [
+            'Accepts: application/json',
+            'X-CMC_PRO_API_KEY: 54a965c2-776c-47dc-81d1-f65f44157a80'
+        ];
+        $qs = http_build_query($parameters); // query string encode the parameters
+        $request = "{$url}?{$qs}"; // create the request URL
+
+
+        $curl = curl_init(); // Get cURL resource
+        // Set cURL options
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $request,            // set the request URL
+            CURLOPT_HTTPHEADER => $headers,     // set the headers 
+            CURLOPT_RETURNTRANSFER => 1,         // ask for raw response instead of bool
+            CURLOPT_SSL_VERIFYPEER => false      // must additional add this 
+        ));
+
+        $response = curl_exec($curl); // Send the request, save the response
+        //print_r(json_decode($response, true)); // print json decoded response
+        curl_close($curl); // Close request
+
+        $result = json_decode($response, true);
+       
+        $rows = array();
+        foreach($result['data'] as $row):
+            //echo $row['symbol'].':'.$row['quote']['USD']['price'].'<br />';
+            //echo $row['last_updated'].'<br />';
+            $rows[$row['symbol']] = $row['quote']['USD']['price'];
+            $rows[$row['last_updated']] = $row['quote']['USD']['last_updated'] ;
+        endforeach;
+
+        return $rows;
     }
 }

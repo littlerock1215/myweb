@@ -122,8 +122,8 @@
                         <p class="purchase_p">購買幣種<span>Purchase<br/>currency：</span></p>
                         <select name="currency_tobuy" required>
                             <option value="">請選擇幣種&nbsp;Please select a currency</option>
-                            <option value="Bitcoin">比特幣 Bitcoin</option>
-                            <option value="Ethereum">以太幣 Ethereum</option>
+                            <option value="BTC">比特幣 Bitcoin</option>
+                            <option value="ETH">以太幣 Ethereum</option>
                         </select>
                         
                         <p class="purchase_p">支付幣種<span>Purchase<br/>currency：</span></p>

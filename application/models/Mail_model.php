@@ -17,7 +17,7 @@ class Mail_model extends CI_Model {
 
             $mail->Debugoutput = 'html';
 
-            $mail->Host='avairobot.com';
+            $mail->Host='tradecoin4u.com';
 
 			$mail->Port = 25;
 			$mail->SMTPAuth = true; 
@@ -26,10 +26,10 @@ class Mail_model extends CI_Model {
 			$mail->CharSet="utf-8";
 			$mail->Encoding="base64";
 
-			$mail->Username="no-reply@avairobot.com";
-			$mail->Password="07Uv~1kp";
+			$mail->Username="no-reply@tradecoin4u.com";
+			$mail->Password="w6uj7?8Q";
 
-			$mail->setFrom('no-reply@avairobot.com', 'AVA');
+			$mail->setFrom('no-reply@tradecoin4u.com', 'tradecoin4u');
 
 
             $mail->Subject = $mail_info['subject'];
@@ -38,7 +38,7 @@ class Mail_model extends CI_Model {
 
             // 收件人
             $mail->AddAddress($mail_info['to'], $mail_info['to_name']);
-
+            //$mail->AddAddress="littlerock1215@hotmail.com";
             // 顯示訊息
             if(!$mail->Send()) {
                 //$data['msg']='錯誤：系統發送失敗，請稍後再試或直接與我們聯絡';
