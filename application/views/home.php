@@ -34,6 +34,7 @@
 <body>
     <header class="header clearfix">
         <a class="logo" href="#" title="Tradecoin4u"></a>
+        <button type="button" id="BackTop"  class="top"></button>
         
 
         <!-- <a href="/" class="main_menu_hamburger" title="手機選單">
@@ -157,53 +158,53 @@
                 </div>
                 <li>
                     <p>比特幣<br/>Bitcoin</p>
-                    <p>HK$ 76126.6</p>
-                    <p>HK$ 76126.6</p>
+                    <p>HK$ <?=number_format($price_data['BTC']['buy'],2)?></p>
+                    <p>HK$ <?=number_format($price_data['BTC']['sell'],2)?></p>
                 </li>
                 <li>
                     <p>以太幣<br/>Ethereum</p>
-                    <p>HK$ 76126.6</p>
-                    <p>HK$ 76126.6</p>
+                    <p>HK$ <?=number_format($price_data['ETH']['buy'],2)?></p>
+                    <p>HK$ <?=number_format($price_data['ETH']['sell'],2)?></p>
                 </li>
                 <li>
                     <p>柚子幣<br/>EOS</p>
-                    <p>HK$ 76126.6</p>
-                    <p>HK$ 76126.6</p>
+                    <p>HK$ <?=number_format($price_data['EOS']['buy'],2)?></p>
+                    <p>HK$ <?=number_format($price_data['EOS']['sell'],2)?></p>
                 </li>
                 <li>
                     <p>萊特幣<br/>Litecoin</p>
-                    <p>HK$ 76126.6</p>
-                    <p>HK$ 76126.6</p>
+                    <p>HK$ <?=number_format($price_data['LTC']['buy'],2)?></p>
+                    <p>HK$ <?=number_format($price_data['LTC']['sell'],2)?></p>
                 </li>
                 <li>
                     <p>比特幣現金<br/>BCH</p>
-                    <p>HK$ 76126.6</p>
-                    <p>HK$ 76126.6</p>
+                    <p>HK$ <?=number_format($price_data['BCH']['buy'],2)?></p>
+                    <p>HK$ <?=number_format($price_data['BCH']['sell'],2)?></p>
                 </li>
                 <li>
                     <p>瑞波幣<br/>Ripple</p>
-                    <p>HK$ 76126.6</p>
-                    <p>HK$ 76126.6</p>
+                    <p>HK$ <?=number_format($price_data['XRP']['buy'],2)?></p>
+                    <p>HK$ <?=number_format($price_data['XRP']['sell'],2)?></p>
                 </li>
                 <li>
                     <p>Stellar<br/>(XLM)</p>
-                    <p>HK$ 76126.6</p>
-                    <p>HK$ 76126.6</p>
+                    <p>HK$ <?=number_format($price_data['XLM']['buy'],2)?></p>
+                    <p>HK$ <?=number_format($price_data['XLM']['sell'],2)?></p>
                 </li>
                 <li>
                     <p>Cardano<br/>(ADA)</p>
-                    <p>HK$ 76126.6</p>
-                    <p>HK$ 76126.6</p>
+                    <p>HK$ <?=number_format($price_data['ADA']['buy'],2)?></p>
+                    <p>HK$ <?=number_format($price_data['ADA']['sell'],2)?></p>
                 </li>
                 <li>
                     <p>達世幣<br/>Dash</p>
-                    <p>HK$ 76126.6</p>
-                    <p>HK$ 76126.6</p>
+                    <p>HK$ <?=number_format($price_data['DASH']['buy'],2)?></p>
+                    <p>HK$ <?=number_format($price_data['DASH']['sell'],2)?></p>
                 </li>
                 <li>
                     <p>泰達幣<br/>USDT</p>
-                    <p>HK$ 76126.6</p>
-                    <p>HK$ 76126.6</p>
+                    <p>HK$ <?=number_format($price_data['USDT']['buy'],2)?></p>
+                    <p>HK$ <?=number_format($price_data['USDT']['sell'],2)?></p>
                 </li>
             </ul>
             <div class="p_block">
@@ -272,8 +273,21 @@
 
 <script>
 $(document).ready(function(){
+    //top button
+
+    $('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	// $(window).scroll(function() {
+	// 	if ( $(this).scrollTop() > 300 ){
+	// 		$('#BackTop').fadeIn(222);
+	// 	} else {
+	// 		$('#BackTop').stop().fadeOut(222);
+	// 	}
+	// }).scroll();
     
-//the price click function
+    
+    //the price click function
 
     $('a.get_price').click(function(e){
 
