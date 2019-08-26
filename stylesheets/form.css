@@ -252,6 +252,12 @@ header {
   margin-bottom: 160px; }
   .light_box.active {
     display: block; }
+  @media (max-width: 767px) {
+    .light_box {
+      width: 80%; } }
+  @media (max-width: 550px) {
+    .light_box {
+      margin-bottom: 20px; } }
   .light_box .box_top {
     text-align: center;
     height: 100px;
@@ -261,6 +267,12 @@ header {
     padding-top: 16px;
     color: #fefefe;
     position: relative; }
+    @media (max-width: 767px) {
+      .light_box .box_top {
+        font-size: 20px;
+        line-height: 30px;
+        height: auto;
+        padding-bottom: 16px; } }
     .light_box .box_top a.cancel {
       text-decoration: none;
       display: none;
@@ -277,6 +289,14 @@ header {
     padding-top: 29px;
     padding-left: calc((100% - 740px) / 2);
     padding-right: calc((100% - 740px) / 2); }
+    @media (max-width: 1100px) {
+      .light_box form.apply_form {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 767px) {
+      .light_box form.apply_form {
+        padding-left: 10px;
+        padding-right: 10px; } }
     .light_box form.apply_form select {
       width: 600px;
       height: 68px;
@@ -291,6 +311,12 @@ header {
       background-position: calc(100% - 14px); }
       .light_box form.apply_form select:focus {
         outline: none; }
+      @media (max-width: 1100px) {
+        .light_box form.apply_form select {
+          width: 76%; } }
+      @media (max-width: 767px) {
+        .light_box form.apply_form select {
+          width: 66%; } }
     .light_box form.apply_form select::-ms-expand {
       display: none; }
     .light_box form.apply_form button {
@@ -306,12 +332,23 @@ header {
       border-radius: 10px;
       margin-bottom: 20px;
       margin-top: 46px; }
+      @media (max-width: 2023px) {
+        .light_box form.apply_form button {
+          width: 80%; } }
 
 p.first_content {
   font-size: 20px;
   line-height: 24px;
   color: #515151;
   margin-bottom: 26px; }
+  @media (max-width: 1023px) {
+    p.first_content {
+      font-size: 16px;
+      margin-left: 10px; } }
+  @media (max-width: 550px) {
+    p.first_content {
+      font-size: 12px;
+      line-height: 18px; } }
 
 p.title_p {
   color: #121212;
@@ -344,6 +381,12 @@ input.box_input {
   font-size: 30px; }
   input.box_input:focus {
     outline: none; }
+  @media (max-width: 1100px) {
+    input.box_input {
+      width: 76%; } }
+  @media (max-width: 767px) {
+    input.box_input {
+      width: 66%; } }
 
 textarea.box_input {
   display: inline-block;
@@ -355,6 +398,12 @@ textarea.box_input {
   min-height: 34px; }
   textarea.box_input:focus {
     outline: none; }
+  @media (max-width: 1100px) {
+    textarea.box_input {
+      width: 76%; } }
+  @media (max-width: 767px) {
+    textarea.box_input {
+      width: 66%; } }
 
 .jconfirm-box {
   width: 300px; }

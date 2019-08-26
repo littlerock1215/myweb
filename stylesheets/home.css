@@ -259,6 +259,11 @@ p.subtitle {
   @media (max-width: 767px) {
     p.subtitle {
       width: 90%; } }
+  @media (max-width: 550px) {
+    p.subtitle {
+      padding-top: 0;
+      font-size: 16px;
+      line-height: 20px; } }
 
 .trading_service_block {
   position: relative;
@@ -387,6 +392,10 @@ p.subtitle {
         margin-bottom: 0;
         text-align: left;
         margin-top: 200px; } }
+    @media (max-width: 550px) {
+      .trading_service_block p.trading_time {
+        margin-top: 130px;
+        font-size: 6px; } }
   .trading_service_block p.trading_time2 {
     font-size: 10px;
     margin-top: 40px;
@@ -400,6 +409,9 @@ p.subtitle {
         display: block;
         margin-top: 0;
         text-align: left; } }
+    @media (max-width: 550px) {
+      .trading_service_block p.trading_time2 {
+        font-size: 6px; } }
   .trading_service_block .coin_top {
     position: absolute;
     top: -20px;
@@ -466,7 +478,8 @@ p.subtitle {
         background-size: 140px auto;
         width: 140px;
         height: 116px;
-        top: 430px; } }
+        top: 380px;
+        right: 0; } }
 
 .light_box_wrap.active {
   position: fixed;
@@ -491,6 +504,12 @@ p.subtitle {
   border: 1px solid #ccc; }
   .light_box.active {
     display: block; }
+  @media (max-width: 767px) {
+    .light_box {
+      width: 80%; } }
+  @media (max-width: 550px) {
+    .light_box {
+      margin-bottom: 20px; } }
   .light_box .box_top {
     text-align: center;
     height: 100px;
@@ -500,6 +519,12 @@ p.subtitle {
     padding-top: 16px;
     color: #fefefe;
     position: relative; }
+    @media (max-width: 767px) {
+      .light_box .box_top {
+        font-size: 20px;
+        line-height: 30px;
+        height: auto;
+        padding-bottom: 16px; } }
     .light_box .box_top a.cancel {
       text-decoration: none;
       display: block;
@@ -511,12 +536,25 @@ p.subtitle {
       position: absolute;
       right: 24px;
       top: 24px; }
+      @media (max-width: 767px) {
+        .light_box .box_top a.cancel {
+          width: 40px;
+          height: 40px;
+          background-size: 40px 40px; } }
   .light_box form.apply_form {
     background-color: white;
     padding-top: 31px;
     padding-bottom: 31px;
     padding-left: calc((100% - 740px) / 2);
     padding-right: calc((100% - 740px) / 2); }
+    @media (max-width: 1200px) {
+      .light_box form.apply_form {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 767px) {
+      .light_box form.apply_form {
+        padding-left: 10px;
+        padding-right: 10px; } }
     .light_box form.apply_form button {
       width: 600px;
       margin-left: calc((100% - 600px) / 2);
@@ -543,12 +581,29 @@ p.subtitle {
         text-decoration: none; }
         .light_box form.apply_form .link a:hover {
           opacity: 0.5; }
+        @media (max-width: 767px) {
+          .light_box form.apply_form .link a {
+            font-size: 20px;
+            line-height: 30px; } }
+        @media (max-width: 550px) {
+          .light_box form.apply_form .link a {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center; } }
 
 p.first_content {
   font-size: 20px;
   line-height: 24px;
   color: #515151;
   margin-bottom: 26px; }
+  @media (max-width: 1023px) {
+    p.first_content {
+      font-size: 16px;
+      margin-left: 10px; } }
+  @media (max-width: 550px) {
+    p.first_content {
+      font-size: 12px;
+      line-height: 18px; } }
 
 p.vip_p {
   font-size: 20px;
@@ -557,6 +612,13 @@ p.vip_p {
   margin-bottom: 26px;
   text-align: center;
   font-weight: 600; }
+  @media (max-width: 1023px) {
+    p.vip_p {
+      font-size: 16px; } }
+  @media (max-width: 550px) {
+    p.vip_p {
+      font-size: 12px;
+      line-height: 18px; } }
 
 p.title_p {
   color: #121212;
@@ -611,6 +673,9 @@ textarea.box_input {
   @media (max-width: 767px) {
     #how_to_trade_block {
       padding-top: 200px; } }
+  @media (max-width: 550px) {
+    #how_to_trade_block {
+      padding-top: 0; } }
   #how_to_trade_block ul {
     margin-top: 40px;
     margin-left: 180px; }
@@ -619,6 +684,9 @@ textarea.box_input {
         width: 70%;
         margin: 10px auto;
         max-width: 550px; } }
+    @media (max-width: 550px) {
+      #how_to_trade_block ul {
+        width: 100%; } }
     #how_to_trade_block ul li {
       margin-bottom: 24x; }
       @media (max-width: 1200px) {
@@ -627,9 +695,15 @@ textarea.box_input {
       @media (max-width: 767px) {
         #how_to_trade_block ul li {
           margin-left: 20px; } }
+      @media (max-width: 550px) {
+        #how_to_trade_block ul li {
+          margin-left: 10px; } }
       #how_to_trade_block ul li img {
         width: 40px;
         margin-top: 6px; }
+        @media (max-width: 550px) {
+          #how_to_trade_block ul li img {
+            width: 20px; } }
       #how_to_trade_block ul li p.li_p_header {
         display: inline-block;
         vertical-align: top;
@@ -642,6 +716,10 @@ textarea.box_input {
         @media (max-width: 767px) {
           #how_to_trade_block ul li p.li_p_header {
             margin-left: 10px; } }
+        @media (max-width: 550px) {
+          #how_to_trade_block ul li p.li_p_header {
+            font-size: 11px;
+            line-height: 18px; } }
       #how_to_trade_block ul li p {
         margin-left: 72px;
         margin-bottom: 10px;
@@ -649,11 +727,18 @@ textarea.box_input {
         @media (max-width: 767px) {
           #how_to_trade_block ul li p {
             margin-left: 52px; } }
+        @media (max-width: 550px) {
+          #how_to_trade_block ul li p {
+            margin-left: 32px;
+            font-size: 8px; } }
   #how_to_trade_block .price_block {
     margin-left: calc((100% - 530px) / 2); }
     @media (max-width: 767px) {
       #how_to_trade_block .price_block {
         margin-left: calc((100% - 260px) / 2); } }
+    @media (max-width: 550px) {
+      #how_to_trade_block .price_block {
+        margin-left: 0; } }
     #how_to_trade_block .price_block a.get_price_tradeblock {
       width: 260px;
       border-radius: 5px;
@@ -673,6 +758,15 @@ textarea.box_input {
         #how_to_trade_block .price_block a.get_price_tradeblock {
           display: block;
           margin-top: 17px; } }
+      @media (max-width: 550px) {
+        #how_to_trade_block .price_block a.get_price_tradeblock {
+          font-size: 12px;
+          line-height: 14px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          width: 70%;
+          border-radius: 10px;
+          margin: 0 auto; } }
     #how_to_trade_block .price_block a.get_price_bottom_tradeblock {
       width: 260px;
       border-radius: 5px;
@@ -691,6 +785,15 @@ textarea.box_input {
       @media (max-width: 767px) {
         #how_to_trade_block .price_block a.get_price_bottom_tradeblock {
           display: block; } }
+      @media (max-width: 550px) {
+        #how_to_trade_block .price_block a.get_price_bottom_tradeblock {
+          font-size: 12px;
+          line-height: 14px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          width: 70%;
+          border-radius: 10px;
+          margin: 8px auto 0; } }
   #how_to_trade_block img.circle_left {
     position: absolute;
     left: 120px;
@@ -702,6 +805,12 @@ textarea.box_input {
     @media (max-width: 767px) {
       #how_to_trade_block img.circle_left {
         top: -230px; } }
+    @media (max-width: 550px) {
+      #how_to_trade_block img.circle_left {
+        width: 133px;
+        right: 2%;
+        left: auto;
+        top: -200px; } }
   #how_to_trade_block img.circle_middle {
     position: absolute;
     right: 50%;
@@ -714,6 +823,15 @@ textarea.box_input {
       #how_to_trade_block img.circle_middle {
         top: -60px;
         right: 40%; } }
+    @media (max-width: 550px) {
+      #how_to_trade_block img.circle_middle {
+        width: 133px;
+        left: 4%;
+        top: -290px;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        right: auto; } }
   #how_to_trade_block img.circle_right {
     position: absolute;
     right: 200px;
@@ -722,6 +840,10 @@ textarea.box_input {
     @media (max-width: 1200px) {
       #how_to_trade_block img.circle_right {
         right: 16%; } }
+    @media (max-width: 550px) {
+      #how_to_trade_block img.circle_right {
+        right: 2%;
+        width: 133px; } }
 
 #quote_block {
   text-align: center;
@@ -729,6 +851,9 @@ textarea.box_input {
   background-size: 100% auto;
   background-position: 0 270px;
   padding-top: 80px; }
+  @media (max-width: 550px) {
+    #quote_block {
+      padding-top: 40px; } }
   #quote_block ul {
     width: 680px;
     height: auto;
@@ -739,6 +864,9 @@ textarea.box_input {
     @media (max-width: 767px) {
       #quote_block ul {
         width: 70%; } }
+    @media (max-width: 550px) {
+      #quote_block ul {
+        width: 100%; } }
     #quote_block ul div {
       text-align: center;
       padding-top: 8px;
@@ -750,6 +878,11 @@ textarea.box_input {
       #quote_block ul div p {
         display: inline-block;
         width: 120px; }
+        @media (max-width: 767px) {
+          #quote_block ul div p {
+            font-size: 7px;
+            line-height: 13px;
+            width: 30%; } }
     #quote_block ul li {
       text-align: center;
       padding-top: 8px;
@@ -762,6 +895,11 @@ textarea.box_input {
         color: black;
         vertical-align: middle;
         width: 120px; }
+        @media (max-width: 767px) {
+          #quote_block ul li p {
+            font-size: 7px;
+            line-height: 13px;
+            width: 30%; } }
     #quote_block ul li:nth-child(even) {
       background-color: white; }
     #quote_block ul li:nth-child(odd) {
@@ -775,6 +913,10 @@ textarea.box_input {
         width: 70%;
         text-align: left;
         margin-left: 15%; } }
+    @media (max-width: 550px) {
+      #quote_block .p_block {
+        width: 100%;
+        margin-left: 0%; } }
     #quote_block .p_block p {
       display: inline-block;
       font-size: 10px;
@@ -783,6 +925,9 @@ textarea.box_input {
       @media (max-width: 1023px) {
         #quote_block .p_block p {
           display: block; } }
+      @media (max-width: 550px) {
+        #quote_block .p_block p {
+          line-height: 16px; } }
   #quote_block a.get_price_quoteblock {
     width: 260px;
     border-radius: 5px;
@@ -802,6 +947,15 @@ textarea.box_input {
     @media (max-width: 767px) {
       #quote_block a.get_price_quoteblock {
         border-radius: 20px; } }
+    @media (max-width: 550px) {
+      #quote_block a.get_price_quoteblock {
+        font-size: 12px;
+        line-height: 14px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 70%;
+        border-radius: 10px;
+        margin: 10px auto 0; } }
 
 #faqs_block {
   padding-top: 60px; }
@@ -818,6 +972,11 @@ textarea.box_input {
       margin-bottom: 8px;
       padding-bottom: 16px;
       padding-right: 30px; }
+      @media (max-width: 550px) {
+        #faqs_block div div {
+          padding-right: 10px;
+          width: 100%;
+          padding-bottom: 2px; } }
       #faqs_block div div a {
         background: url(../images/icon.png) no-repeat;
         background-size: 30px 30px;
@@ -831,6 +990,14 @@ textarea.box_input {
         margin-right: 14px; }
         #faqs_block div div a.active {
           background: url(../images/pulse.png) no-repeat; }
+        @media (max-width: 550px) {
+          #faqs_block div div a {
+            margin-top: 6px;
+            margin-left: 6px;
+            margin-right: 6px;
+            background-size: 20px 20px;
+            width: 20px;
+            height: 20px; } }
       #faqs_block div div p.question {
         display: inline-block;
         vertical-align: top;
@@ -838,14 +1005,28 @@ textarea.box_input {
         margin-bottom: 24px;
         font-size: 22px;
         line-height: 33px; }
-        @media (max-width: 767px) {
+        @media (max-width: 1023px) {
           #faqs_block div div p.question {
-            width: 85%; } }
+            width: 86%; } }
+        @media (max-width: 1023px) {
+          #faqs_block div div p.question {
+            width: 80%;
+            font-size: 18px; } }
+        @media (max-width: 550px) {
+          #faqs_block div div p.question {
+            font-size: 11px;
+            line-height: 16px; } }
       #faqs_block div div p.answer {
         margin-left: 64px;
         margin-bottom: 12px;
         font-size: 18px;
         line-height: 22px; }
+        @media (max-width: 550px) {
+          #faqs_block div div p.answer {
+            margin-left: 33px;
+            margin-bottom: 8px;
+            font-size: 8px;
+            line-height: 15px; } }
 
 #contact_block {
   position: relative;
@@ -853,6 +1034,9 @@ textarea.box_input {
   background-size: 100% auto;
   background-position: 0 270px;
   padding-top: 60px; }
+  @media (max-width: 550px) {
+    #contact_block {
+      padding-top: 20px; } }
   #contact_block iframe {
     margin-left: calc((100% - 800px) / 2);
     width: 800px;
@@ -865,6 +1049,11 @@ textarea.box_input {
     @media (max-width: 767px) {
       #contact_block iframe {
         height: -webkit-fill-available; } }
+    @media (max-width: 550px) {
+      #contact_block iframe {
+        margin-left: 0%;
+        width: 100%;
+        height: 320px; } }
   #contact_block .small_font {
     font-size: 18px;
     line-height: 27px;
@@ -879,6 +1068,12 @@ textarea.box_input {
       #contact_block .small_font {
         margin-bottom: 0;
         margin-top: 26px; } }
+    @media (max-width: 767px) {
+      #contact_block .small_font {
+        font-size: 4px;
+        line-height: 16px;
+        margin-left: 0;
+        width: 100%; } }
   #contact_block a {
     background: url(../images/fb-icon-fake.png) no-repeat;
     background-size: 40px 40px;
@@ -888,27 +1083,50 @@ textarea.box_input {
     text-decoration: none;
     display: block;
     position: absolute;
-    top: 764px; }
+    top: 750px; }
+    @media (max-width: 767px) {
+      #contact_block a {
+        top: 540px; } }
+    @media (max-width: 550px) {
+      #contact_block a {
+        top: 420px;
+        background-size: 20px 20px;
+        background-position: 0 0;
+        width: 20px;
+        height: 20px; } }
   #contact_block a.fb1 {
     right: calc((100% - 800px) / 2); }
     @media (max-width: 1200px) {
       #contact_block a.fb1 {
         right: 15%; } }
+    @media (max-width: 550px) {
+      #contact_block a.fb1 {
+        right: 0%; } }
   #contact_block a.fb2 {
     right: calc(((100% - 800px) / 2) + 60px); }
     @media (max-width: 1200px) {
       #contact_block a.fb2 {
         right: 23%; } }
+    @media (max-width: 550px) {
+      #contact_block a.fb2 {
+        right: 11%; } }
 
 footer {
   margin-top: 93px;
   position: relative; }
+  @media (max-width: 550px) {
+    footer {
+      margin-top: 36px; } }
   footer h6 {
     text-align: center;
     margin-bottom: 34px; }
     @media (max-width: 1200px) {
       footer h6 {
         padding-top: 80px; } }
+    @media (max-width: 550px) {
+      footer h6 {
+        padding-top: 60px;
+        font-size: 6px; } }
   footer h4 {
     text-align: center;
     font-size: 14px;
@@ -921,6 +1139,11 @@ footer {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%; } }
+    @media (max-width: 550px) {
+      footer h4 {
+        height: auto;
+        font-size: 4px;
+        line-height: 18px; } }
     footer h4 a {
       text-decoration: none;
       display: inline;
@@ -947,6 +1170,13 @@ footer {
       footer a.bottom_item1 {
         right: auto;
         left: 21%; } }
+    @media (max-width: 550px) {
+      footer a.bottom_item1 {
+        font-size: 2px;
+        line-height: 14px;
+        left: -1%;
+        background-size: 8px 8px;
+        background-position: 110px 4px; } }
   footer a.bottom_item2 {
     position: absolute;
     top: 0;
@@ -965,6 +1195,13 @@ footer {
       footer a.bottom_item2 {
         right: auto;
         left: 44%; } }
+    @media (max-width: 550px) {
+      footer a.bottom_item2 {
+        font-size: 2px;
+        line-height: 14px;
+        background-size: 8px 8px;
+        left: 34%;
+        background-position: 94px 4px; } }
   footer a.bottom_item3 {
     position: absolute;
     top: 0;
@@ -983,6 +1220,12 @@ footer {
       footer a.bottom_item3 {
         right: auto;
         left: 62%; } }
+    @media (max-width: 550px) {
+      footer a.bottom_item3 {
+        font-size: 2px;
+        line-height: 14px;
+        background-size: 8px 8px;
+        background-position: 90px 4px; } }
 
 .jconfirm-box {
   width: 300px; }
