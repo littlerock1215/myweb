@@ -240,15 +240,30 @@ p.subtitle {
   line-height: 38px;
   text-align: left;
   font-weight: 600; }
+  @media (max-width: 1200px) {
+    p.subtitle {
+      width: 70%;
+      margin: 0 auto 10px;
+      max-width: 550px; } }
 
 .trading_service_block {
-  position: relative; }
+  position: relative;
+  margin: 0 auto;
+  width: 100%; }
+  .trading_service_block .content {
+    z-index: 999;
+    position: relative; }
   .trading_service_block p.title {
     font-size: 40px;
     line-height: 52px;
     margin-bottom: 20px;
     margin-left: 80px;
     font-weight: 600; }
+    @media (max-width: 1200px) {
+      .trading_service_block p.title {
+        width: 70%;
+        margin: 0 auto 20px;
+        max-width: 550px; } }
   .trading_service_block p.content_font {
     font-size: 18px;
     line-height: 22px;
@@ -258,6 +273,11 @@ p.subtitle {
     font-weight: 600; }
     .trading_service_block p.content_font:last-child {
       margin-bottom: 22px; }
+    @media (max-width: 1200px) {
+      .trading_service_block p.content_font {
+        width: 70%;
+        margin: 0 auto 10px;
+        max-width: 550px; } }
   .trading_service_block a.get_price {
     width: 540px;
     border-radius: 5px;
@@ -272,6 +292,11 @@ p.subtitle {
     padding-bottom: 8px;
     font-size: 24px;
     margin-left: 80px; }
+    @media (max-width: 1200px) {
+      .trading_service_block a.get_price {
+        width: 70%;
+        margin: 10px auto;
+        max-width: 550px; } }
   .trading_service_block a.get_price_bottom {
     width: 540px;
     border-radius: 5px;
@@ -287,25 +312,57 @@ p.subtitle {
     font-size: 24px;
     border: 1px solid black;
     margin-left: 80px; }
+    @media (max-width: 1200px) {
+      .trading_service_block a.get_price_bottom {
+        width: 70%;
+        margin: 10px auto;
+        max-width: 550px; } }
   .trading_service_block p.trading_time {
     font-size: 10px;
     margin-top: 40px;
     margin-bottom: 40px; }
-  .trading_service_block img.coin_top {
+    @media (max-width: 1200px) {
+      .trading_service_block p.trading_time {
+        text-align: center; } }
+  .trading_service_block .coin_top {
     position: absolute;
     top: -20px;
     right: 100px;
-    width: 240px; }
-  .trading_service_block img.coin_middle {
+    width: 240px;
+    height: 200px;
+    background: url(../images/coin_top.gif) no-repeat;
+    background-size: 240px auto;
+    background-position: 0 0; }
+    @media (max-width: 1300px) {
+      .trading_service_block .coin_top {
+        right: 2%; } }
+  .trading_service_block .coin_middle {
     position: absolute;
     top: 150px;
     right: 310px;
-    width: 240px; }
-  .trading_service_block img.coin_bottom {
+    width: 240px;
+    height: 200px;
+    background: url(../images/coin_middle.gif) no-repeat;
+    background-size: 240px auto;
+    background-position: 0 0; }
+    @media (max-width: 1300px) {
+      .trading_service_block .coin_middle {
+        right: 18%; } }
+    @media (max-width: 1200px) {
+      .trading_service_block .coin_middle {
+        right: auto; } }
+  .trading_service_block .coin_bottom {
     position: absolute;
     top: 300px;
     right: 100px;
-    width: 240px; }
+    width: 240px;
+    height: 200px;
+    background: url(../images/coin_bottom.gif) no-repeat;
+    background-size: 240px auto;
+    background-position: 0 0; }
+    @media (max-width: 1300px) {
+      .trading_service_block .coin_bottom {
+        right: 2%; } }
 
 .light_box_wrap.active {
   position: fixed;
@@ -352,25 +409,10 @@ p.subtitle {
       top: 24px; }
   .light_box form.apply_form {
     background-color: white;
-    padding-top: 29px;
+    padding-top: 31px;
+    padding-bottom: 31px;
     padding-left: calc((100% - 740px) / 2);
     padding-right: calc((100% - 740px) / 2); }
-    .light_box form.apply_form select {
-      width: 600px;
-      height: 68px;
-      display: inline;
-      vertical-align: text-bottom;
-      padding-left: 10px;
-      border-radius: 5px;
-      appearance: none;
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      background: url(../images/arrow.png) no-repeat scroll right center transparent;
-      background-position: calc(100% - 14px); }
-      .light_box form.apply_form select:focus {
-        outline: none; }
-    .light_box form.apply_form select::-ms-expand {
-      display: none; }
     .light_box form.apply_form button {
       width: 600px;
       margin-left: calc((100% - 600px) / 2);
@@ -384,12 +426,33 @@ p.subtitle {
       border-radius: 10px;
       margin-bottom: 20px;
       margin-top: 46px; }
+    .light_box form.apply_form .link {
+      width: 120px;
+      margin-left: calc((100% - 120px) / 2); }
+      .light_box form.apply_form .link a {
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 24px;
+        color: #121212;
+        line-height: 34px;
+        text-decoration: none; }
+        .light_box form.apply_form .link a:hover {
+          opacity: 0.5; }
 
 p.first_content {
   font-size: 20px;
   line-height: 24px;
   color: #515151;
   margin-bottom: 26px; }
+
+p.vip_p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fca85e;
+  margin-bottom: 26px;
+  text-align: center;
+  font-weight: 600; }
 
 p.title_p {
   color: #121212;
@@ -438,11 +501,22 @@ textarea.box_input {
   position: relative;
   margin-top: 440px;
   padding-top: 60px; }
+  @media (max-width: 1200px) {
+    #how_to_trade_block {
+      width: 100%; } }
   #how_to_trade_block ul {
     margin-top: 40px;
     margin-left: 180px; }
+    @media (max-width: 1200px) {
+      #how_to_trade_block ul {
+        width: 70%;
+        margin: 10px auto;
+        max-width: 550px; } }
     #how_to_trade_block ul li {
-      margin-bottom: 24px; }
+      margin-bottom: 24x; }
+      @media (max-width: 1200px) {
+        #how_to_trade_block ul li {
+          margin-left: 40px; } }
       #how_to_trade_block ul li img {
         width: 40px;
         margin-top: 6px; }
@@ -496,6 +570,9 @@ textarea.box_input {
     left: 120px;
     top: -400px;
     width: 190px; }
+    @media (max-width: 1200px) {
+      #how_to_trade_block img.circle_left {
+        left: 16%; } }
   #how_to_trade_block img.circle_middle {
     position: absolute;
     right: 50%;
@@ -509,6 +586,9 @@ textarea.box_input {
     right: 200px;
     top: -400px;
     width: 190px; }
+    @media (max-width: 1200px) {
+      #how_to_trade_block img.circle_right {
+        right: 16%; } }
 
 #quote_block {
   text-align: center;
@@ -520,6 +600,12 @@ textarea.box_input {
     width: 680px;
     height: 500px;
     margin: -70px auto 0; }
+    @media (max-width: 1200px) {
+      #quote_block ul {
+        margin: 0px auto 0; } }
+    @media (max-width: 768px) {
+      #quote_block ul {
+        width: 70%; } }
     #quote_block ul div {
       text-align: center;
       padding-top: 8px;
@@ -577,6 +663,11 @@ textarea.box_input {
   #faqs_block div {
     margin-left: calc((100% - 800px ) / 2);
     width: 800px; }
+    @media (max-width: 1200px) {
+      #faqs_block div {
+        max-width: 800px;
+        width: 90%;
+        margin: 0 auto; } }
     #faqs_block div div {
       background-color: #eeeeee;
       margin-bottom: 8px;
@@ -615,12 +706,24 @@ textarea.box_input {
   background-position: 0 270px;
   padding-top: 60px; }
   #contact_block iframe {
-    margin-left: calc((100% - 800px) / 2); }
+    margin-left: calc((100% - 800px) / 2);
+    width: 800px;
+    height: 600px;
+    border: 0; }
+    @media (max-width: 1200px) {
+      #contact_block iframe {
+        width: 70%;
+        margin-left: 15%; } }
   #contact_block .small_font {
     font-size: 18px;
     line-height: 27px;
     margin-left: calc((100% - 800px) / 2);
     margin-bottom: 17px; }
+    @media (max-width: 1200px) {
+      #contact_block .small_font {
+        margin-left: 15%;
+        margin-top: 12px;
+        width: 70%; } }
   #contact_block a {
     background: url(../images/fb-icon-fake.png) no-repeat;
     background-size: 40px 40px;
@@ -630,11 +733,17 @@ textarea.box_input {
     text-decoration: none;
     display: block;
     position: absolute;
-    top: 750px; }
+    top: 764px; }
   #contact_block a.fb1 {
     right: calc((100% - 800px) / 2); }
+    @media (max-width: 1200px) {
+      #contact_block a.fb1 {
+        right: 15%; } }
   #contact_block a.fb2 {
     right: calc(((100% - 800px) / 2) + 60px); }
+    @media (max-width: 1200px) {
+      #contact_block a.fb2 {
+        right: 23%; } }
 
 footer {
   margin-top: 93px;
@@ -642,6 +751,9 @@ footer {
   footer h6 {
     text-align: center;
     margin-bottom: 34px; }
+    @media (max-width: 1200px) {
+      footer h6 {
+        padding-top: 80px; } }
   footer h4 {
     text-align: center;
     font-size: 14px;
@@ -649,6 +761,11 @@ footer {
     margin-left: calc((100% - 1000px) / 2);
     margin-right: calc((100% - 1000px) / 2);
     margin-bottom: 28px; }
+    @media (max-width: 1200px) {
+      footer h4 {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%; } }
     footer h4 a {
       text-decoration: none;
       display: inline;
@@ -667,6 +784,10 @@ footer {
     text-decoration: none;
     display: block;
     color: #000000; }
+    @media (max-width: 1200px) {
+      footer a.bottom_item1 {
+        right: auto;
+        left: 26%; } }
   footer a.bottom_item2 {
     position: absolute;
     top: 0;
@@ -681,6 +802,10 @@ footer {
     text-decoration: none;
     display: block;
     color: #000000; }
+    @media (max-width: 1200px) {
+      footer a.bottom_item2 {
+        right: auto;
+        left: 44%; } }
   footer a.bottom_item3 {
     position: absolute;
     top: 0;
@@ -695,6 +820,10 @@ footer {
     text-decoration: none;
     display: block;
     color: #000000; }
+    @media (max-width: 1200px) {
+      footer a.bottom_item3 {
+        right: auto;
+        left: 62%; } }
 
 .jconfirm-box {
   width: 300px; }

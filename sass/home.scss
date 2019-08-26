@@ -1,4 +1,3 @@
-
 @import "reset";
 //@import "bootstrap/scss/bootstrap";
 @import "base";
@@ -80,11 +79,26 @@ p.subtitle{
     line-height: 38px;
     text-align: left;
     font-weight: 600;
+
+    @include susy-breakpoint(('max-width':1200px)){
+            
+        width: 70%;
+        margin:0 auto 10px;
+        max-width:550px;
+    }
 }
 
 .trading_service_block{
 
     position: relative;
+    margin: 0 auto;
+    width: 100%;
+
+    .content{
+
+        z-index:999;
+        position:relative;
+    }
 
     p.title{
 
@@ -93,6 +107,13 @@ p.subtitle{
         margin-bottom: 20px;
         margin-left:80px;
         font-weight: 600;
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            width: 70%;
+            margin:0 auto 20px;
+            max-width: 550px;
+        }
     }
 
     p.content_font{
@@ -107,6 +128,13 @@ p.subtitle{
         &:last-child{
 
             margin-bottom: 22px;
+        }
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            width: 70%;
+            margin:0 auto 10px;
+            max-width:550px;
         }
     }
 
@@ -126,6 +154,13 @@ p.subtitle{
         padding-bottom: 8px;
         font-size: 24px;
         margin-left:80px;
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            width: 70%;
+            margin:10px auto;
+            max-width:550px;
+        }
     }
 
     a.get_price_bottom{
@@ -144,6 +179,13 @@ p.subtitle{
         font-size: 24px;
         border:1px solid black;
         margin-left:80px;
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            width: 70%;
+            margin:10px auto;
+            max-width:550px;
+        }
     }
 
     p.trading_time{
@@ -151,30 +193,67 @@ p.subtitle{
         font-size:10px;
         margin-top:40px;
         margin-bottom:40px;
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            text-align: center;
+        }
     }
 
-    img.coin_top{
+    .coin_top{
 
         position: absolute;
         top: -20px;
         right: 100px;
         width:240px;
+        height:200px;
+        background:url(../images/coin_top.gif) no-repeat;
+        background-size:240px auto;
+        background-position:0 0;
+
+        @include susy-breakpoint(('max-width':1300px)){
+            
+            right:2%;
+        }
     }
 
-    img.coin_middle{
+    .coin_middle{
 
         position: absolute;
         top: 150px;
         right: 310px;
         width:240px;
+        height:200px;
+        background:url(../images/coin_middle.gif) no-repeat;
+        background-size:240px auto;
+        background-position: 0 0;
+
+        @include susy-breakpoint(('max-width':1300px)){
+            
+            right:18%;
+        }
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            right:auto;
+        }
     }
 
-    img.coin_bottom{
+    .coin_bottom{
 
         position: absolute;
         top: 300px;
         right: 100px;
         width:240px;
+        height:200px;
+        background:url(../images/coin_bottom.gif) no-repeat;
+        background-size:240px auto;
+        background-position: 0 0;
+
+        @include susy-breakpoint(('max-width':1300px)){
+            
+            right:2%;
+        }
     }
 }
 
@@ -241,32 +320,10 @@ p.subtitle{
     form.apply_form{
 
         background-color:white;
-        padding-top:29px;
+        padding-top:31px;
+        padding-bottom: 31px;
         padding-left:calc((100% - 740px) / 2);
         padding-right:calc((100% - 740px) / 2);
-
-        select{
-            
-            width:600px;
-            height: 68px;
-            display: inline;
-            vertical-align: text-bottom;
-            padding-left: 10px;
-            border-radius: 5px;
-            appearance:none; 
-            -moz-appearance:none; 
-            -webkit-appearance:none;
-            background: url(../images/arrow.png) no-repeat scroll right center transparent;
-            background-position: calc(100% - 14px);
-
-            &:focus{
-
-                outline:none;
-            }
-        }
-
-        select::-ms-expand{ display: none; };
-
 
         button{
 
@@ -283,6 +340,27 @@ p.subtitle{
             margin-bottom: 20px;
             margin-top:46px;
         }
+
+        .link{
+
+            width: 120px;
+            margin-left: calc((100% - 120px) / 2);
+
+            a{
+                display: block;
+                margin: 0 auto;
+                text-align: left;
+                font-size: 24px;
+                color: #121212;
+                line-height: 34px;
+                text-decoration: none;
+
+                &:hover{
+
+                    opacity:0.5
+                }
+            }
+        }
     }
 }
 
@@ -292,6 +370,16 @@ p.first_content{
     line-height: 24px;
     color: #515151;
     margin-bottom: 26px;
+}
+
+p.vip_p{
+
+        font-size:20px;
+        line-height: 30px;
+        color: #fca85e;
+        margin-bottom: 26px;
+        text-align: center;
+        font-weight: 600;
 }
 
 p.title_p{
@@ -361,15 +449,32 @@ textarea.box_input{
     position: relative;
     margin-top: 440px;
     padding-top: 60px;
+
+    @include susy-breakpoint(('max-width':1200px)){
+            
+        width:100%;
+    }
     
 
     ul{
         margin-top: 40px;
         margin-left: 180px;
 
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            width: 70%;
+            margin:10px auto;
+            max-width:550px;
+        }
+
         li{
 
-            margin-bottom:24px;
+            margin-bottom:24x;
+
+            @include susy-breakpoint(('max-width':1200px)){
+            
+                margin-left:40px;
+            }
 
             img{
                 width:40px;
@@ -445,6 +550,11 @@ textarea.box_input{
         left: 120px;
         top: -400px;
         width: 190px;
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            left: 16%;
+        }
     }
 
     img.circle_middle{
@@ -462,6 +572,11 @@ textarea.box_input{
         right: 200px;
         top: -400px;
         width: 190px;
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            right: 16%;
+        }
     }
 }
 
@@ -477,7 +592,16 @@ textarea.box_input{
         width: 680px;
         height: 500px;
         margin: -70px auto 0;
-        //border: 1px solid #ccc;
+        
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            margin: 0px auto 0;
+        }
+
+        @include susy-breakpoint(('max-width':768px)){
+            
+            width:70%;
+        }
 
         div{
 
@@ -570,6 +694,13 @@ textarea.box_input{
         margin-left: calc((100% - 800px ) / 2);
         width: 800px;
 
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            max-width: 800px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
         div{
             background-color: #eeeeee;
             margin-bottom: 8px;
@@ -627,6 +758,15 @@ textarea.box_input{
     iframe{
 
         margin-left: calc((100% - 800px) / 2);
+        width:800px;
+        height:600px;
+        border:0;
+        
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            width: 70%;
+            margin-left:15%;
+        }
     }
 
     .small_font{
@@ -635,6 +775,13 @@ textarea.box_input{
         line-height: 27px;
         margin-left: calc((100% - 800px) / 2);
         margin-bottom: 17px;
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            margin-left:15%;
+            margin-top:12px;
+            width:70%;
+        }
     }
 
     a{
@@ -647,18 +794,28 @@ textarea.box_input{
         text-decoration: none;
         display:block;
         position: absolute;
-        top:750px;
+        top:764px;
         
     }
 
     a.fb1{
 
         right:calc((100% - 800px) / 2);
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            right:15%;
+        }
     }
 
     a.fb2{
 
         right:calc(((100% - 800px) / 2) + 60px);
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            right:23%;
+        }
     }
 
 }
@@ -671,6 +828,11 @@ footer{
     h6{
         text-align: center;
         margin-bottom: 34px;
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            padding-top: 80px;
+        }
     }
 
     h4{
@@ -681,6 +843,14 @@ footer{
         margin-left: calc((100% - 1000px) / 2);
         margin-right: calc((100% - 1000px) / 2);
         margin-bottom: 28px;
+
+        
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            width: 90%;
+            margin-left:5%;
+            margin-right:5%;
+        }
 
         a{
             text-decoration: none;
@@ -705,6 +875,11 @@ footer{
         display: block;
         color:#000000;
 
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            right: auto;
+            left: 26%;
+        }
     }
 
     a.bottom_item2{
@@ -722,6 +897,12 @@ footer{
         text-decoration: none;
         display: block;
         color:#000000;
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            right: auto;
+            left: 44%;
+        }
     }
 
     a.bottom_item3{
@@ -739,6 +920,12 @@ footer{
         text-decoration: none;
         display: block;
         color:#000000;
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            right: auto;
+            left: 62%;
+        }
     }
 }
 
@@ -754,4 +941,3 @@ label.error{
     margin-left: 104px;
     color: red;
 }
-

@@ -1,0 +1,254 @@
+@import "reset";
+//@import "bootstrap/scss/bootstrap";
+@import "base";
+@import "perfect-scrollbar";
+header{
+    margin:0 auto;
+}
+
+body {
+
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Adobe 繁黑體 Std B", "儷黑 Pro";
+
+    &.open{
+        overflow: hidden;
+    }
+}
+
+body, html{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+header{
+
+    padding: 20px 20px 20px 20px;
+    display: block;
+    position: fixed;
+    background-color: white;
+    z-index: 999;
+    width: 100%;
+
+    a.logo{
+        
+        background:url(../images/logo.gif) no-repeat;
+        background-size:247.5px 31.5px;
+        background-position: 0 0;
+        width:247.5px;
+        height:31.5px;
+        text-decoration: none;
+        display:inline-block;
+    }
+
+    ul.nav_mainpage{
+
+        display:none;
+
+        float:right;
+        margin-top:0px;
+        margin-right:0px;
+
+        li{
+            float:left;
+
+            a{
+                text-decoration: none;
+                display:block;
+                text-align: left;
+                font-size:20px;
+                color:black;
+                margin-right:40px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.light_box_wrap{
+
+        position: fixed;
+        left: 0;
+        top: 74px;
+        height: 100%;
+        width: 100%;
+        background: #eeeeee;
+        z-index: 999;
+        overflow: auto;
+}
+
+.light_box{
+
+    display:block;
+    width: calc( 100% - 300px);
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 160px;
+
+    &.active{
+
+        display:block;        
+    }
+
+    .box_top{
+
+        text-align: center;
+        height: 100px;
+        background-color: #121212;
+        font-size: 34px;
+        line-height: 42px;
+        padding-top:16px;
+        color: #fefefe;
+        position: relative;
+
+        a.cancel{
+
+            text-decoration: none;
+            display:none;
+            width:50px;
+            height:50px;
+            background: url(../images/cancel-icon.png) no-repeat;
+            background-size: 50px 50px;
+            background-position: 0 0 ;
+            position: absolute;
+            right:24px;
+            top:24px;
+        }
+    }
+
+    form.apply_form{
+
+        background-color:white;
+        padding-top:29px;
+        padding-left:calc((100% - 740px) / 2);
+        padding-right:calc((100% - 740px) / 2);
+
+        select{
+            
+            width:600px;
+            height: 68px;
+            display: inline;
+            vertical-align: text-bottom;
+            padding-left: 10px;
+            border-radius: 5px;
+            appearance:none; 
+            -moz-appearance:none; 
+            -webkit-appearance:none;
+            background: url(../images/arrow.png) no-repeat scroll right center transparent;
+            background-position: calc(100% - 14px);
+
+            &:focus{
+
+                outline:none;
+            }
+        }
+
+        select::-ms-expand{ display: none; };
+
+
+        button{
+
+            width: 600px;
+            margin-left: calc((100% - 600px) / 2);
+            background-color: black;
+            color: white;
+            font-size: 24px;
+            line-height: 32px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border:0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-top:46px;
+        }
+    }
+}
+
+p.first_content{
+
+    font-size:20px;
+    line-height: 24px;
+    color: #515151;
+    margin-bottom: 26px;
+}
+
+p.title_p{
+    color: #121212;
+    font-size:24px;
+    line-height: 38px;
+    display:inline-block;
+    width:100px;
+    margin-top: 46px;
+    font-weight: 600;
+
+    span{
+
+        font-size:16px;
+    }
+}
+
+p.purchase_p{
+
+    color: #121212;
+    font-size:24px;
+    display:inline-block;
+    width:100px;
+    margin-top: 46px;
+    font-weight: 600;
+
+    span{
+
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+input.box_input{
+    
+    display:inline;
+    width:600px;
+    border: 0;
+    border-bottom: 1px solid #515151;
+    height:34px;
+    font-size:30px;
+
+    &:focus{
+
+        outline:none;
+    }
+}
+
+textarea.box_input{
+    
+    display:inline-block;
+    width:600px;
+    height:auto;
+    border: 0;
+    border-bottom: 1px solid #515151;
+    font-size:30px;
+    min-height: 34px;
+
+    &:focus{
+
+        outline:none;
+    }
+}
+
+.jconfirm-box{
+
+    width:300px;
+}
+
+label.error{
+
+    display:block;
+    margin-top: 4px;
+    margin-left: 104px;
+    color: red;
+}
