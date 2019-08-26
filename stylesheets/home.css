@@ -212,10 +212,18 @@ header {
     height: 31.5px;
     text-decoration: none;
     display: inline-block; }
+    @media (max-width: 550px) {
+      header a.logo {
+        width: 154px;
+        height: 20px;
+        background-size: 154px 20px; } }
   header ul.nav_mainpage {
     float: right;
     margin-top: 0px;
     margin-right: 0px; }
+    @media (max-width: 1023px) {
+      header ul.nav_mainpage {
+        display: none; } }
     header ul.nav_mainpage li {
       float: left; }
       header ul.nav_mainpage li a {
@@ -232,6 +240,9 @@ header {
   background: url(../images/bg.png) no-repeat;
   background-size: 100% auto;
   background-position: 0 770px; }
+  @media (max-width: 767px) {
+    .main_userpage {
+      padding: 180px 20px 32px; } }
 
 p.subtitle {
   margin-left: 40px;
@@ -245,13 +256,16 @@ p.subtitle {
       width: 70%;
       margin: 0 auto 10px;
       max-width: 550px; } }
+  @media (max-width: 767px) {
+    p.subtitle {
+      width: 90%; } }
 
 .trading_service_block {
   position: relative;
   margin: 0 auto;
   width: 100%; }
   .trading_service_block .content {
-    z-index: 999;
+    z-index: 399;
     position: relative; }
   .trading_service_block p.title {
     font-size: 40px;
@@ -264,6 +278,17 @@ p.subtitle {
         width: 70%;
         margin: 0 auto 20px;
         max-width: 550px; } }
+    @media (max-width: 767px) {
+      .trading_service_block p.title {
+        width: 70%;
+        margin: 60px auto 20px;
+        max-width: 550px; } }
+    @media (max-width: 550px) {
+      .trading_service_block p.title {
+        width: 100%;
+        font-size: 26px;
+        margin: 0px auto 20px;
+        line-height: 30px; } }
   .trading_service_block p.content_font {
     font-size: 18px;
     line-height: 22px;
@@ -278,6 +303,15 @@ p.subtitle {
         width: 70%;
         margin: 0 auto 10px;
         max-width: 550px; } }
+    @media (max-width: 767px) {
+      .trading_service_block p.content_font {
+        width: 70%;
+        font-size: 14px; } }
+    @media (max-width: 550px) {
+      .trading_service_block p.content_font {
+        width: 100%;
+        font-size: 10px;
+        line-height: 18px; } }
   .trading_service_block a.get_price {
     width: 540px;
     border-radius: 5px;
@@ -297,6 +331,17 @@ p.subtitle {
         width: 70%;
         margin: 10px auto;
         max-width: 550px; } }
+    @media (max-width: 767px) {
+      .trading_service_block a.get_price {
+        border-radius: 20px; } }
+    @media (max-width: 550px) {
+      .trading_service_block a.get_price {
+        font-size: 12px;
+        line-height: 14px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 100%;
+        border-radius: 10px; } }
   .trading_service_block a.get_price_bottom {
     width: 540px;
     border-radius: 5px;
@@ -317,13 +362,44 @@ p.subtitle {
         width: 70%;
         margin: 10px auto;
         max-width: 550px; } }
+    @media (max-width: 767px) {
+      .trading_service_block a.get_price_bottom {
+        border-radius: 20px; } }
+    @media (max-width: 550px) {
+      .trading_service_block a.get_price_bottom {
+        font-size: 12px;
+        line-height: 14px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 100%;
+        border-radius: 10px; } }
   .trading_service_block p.trading_time {
     font-size: 10px;
     margin-top: 40px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    display: inline-block; }
     @media (max-width: 1200px) {
       .trading_service_block p.trading_time {
         text-align: center; } }
+    @media (max-width: 767px) {
+      .trading_service_block p.trading_time {
+        display: block;
+        margin-bottom: 0;
+        text-align: left;
+        margin-top: 200px; } }
+  .trading_service_block p.trading_time2 {
+    font-size: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: inline-block; }
+    @media (max-width: 1200px) {
+      .trading_service_block p.trading_time2 {
+        text-align: center; } }
+    @media (max-width: 767px) {
+      .trading_service_block p.trading_time2 {
+        display: block;
+        margin-top: 0;
+        text-align: left; } }
   .trading_service_block .coin_top {
     position: absolute;
     top: -20px;
@@ -336,6 +412,15 @@ p.subtitle {
     @media (max-width: 1300px) {
       .trading_service_block .coin_top {
         right: 2%; } }
+    @media (max-width: 767px) {
+      .trading_service_block .coin_top {
+        top: -180px; } }
+    @media (max-width: 550px) {
+      .trading_service_block .coin_top {
+        background-size: 140px auto;
+        width: 140px;
+        height: 116px;
+        top: -130px; } }
   .trading_service_block .coin_middle {
     position: absolute;
     top: 150px;
@@ -351,6 +436,16 @@ p.subtitle {
     @media (max-width: 1200px) {
       .trading_service_block .coin_middle {
         right: auto; } }
+    @media (max-width: 767px) {
+      .trading_service_block .coin_middle {
+        top: 310px; } }
+    @media (max-width: 550px) {
+      .trading_service_block .coin_middle {
+        background-size: 140px auto;
+        width: 140px;
+        height: 102px;
+        top: 290px;
+        left: -70px; } }
   .trading_service_block .coin_bottom {
     position: absolute;
     top: 300px;
@@ -363,6 +458,15 @@ p.subtitle {
     @media (max-width: 1300px) {
       .trading_service_block .coin_bottom {
         right: 2%; } }
+    @media (max-width: 767px) {
+      .trading_service_block .coin_bottom {
+        top: 470px; } }
+    @media (max-width: 550px) {
+      .trading_service_block .coin_bottom {
+        background-size: 140px auto;
+        width: 140px;
+        height: 116px;
+        top: 430px; } }
 
 .light_box_wrap.active {
   position: fixed;
@@ -504,6 +608,9 @@ textarea.box_input {
   @media (max-width: 1200px) {
     #how_to_trade_block {
       width: 100%; } }
+  @media (max-width: 767px) {
+    #how_to_trade_block {
+      padding-top: 200px; } }
   #how_to_trade_block ul {
     margin-top: 40px;
     margin-left: 180px; }
@@ -517,6 +624,9 @@ textarea.box_input {
       @media (max-width: 1200px) {
         #how_to_trade_block ul li {
           margin-left: 40px; } }
+      @media (max-width: 767px) {
+        #how_to_trade_block ul li {
+          margin-left: 20px; } }
       #how_to_trade_block ul li img {
         width: 40px;
         margin-top: 6px; }
@@ -529,12 +639,21 @@ textarea.box_input {
         font-weight: 600;
         margin-top: 0px;
         margin-bottom: 16px; }
+        @media (max-width: 767px) {
+          #how_to_trade_block ul li p.li_p_header {
+            margin-left: 10px; } }
       #how_to_trade_block ul li p {
         margin-left: 72px;
         margin-bottom: 10px;
         max-width: 980px; }
+        @media (max-width: 767px) {
+          #how_to_trade_block ul li p {
+            margin-left: 52px; } }
   #how_to_trade_block .price_block {
     margin-left: calc((100% - 530px) / 2); }
+    @media (max-width: 767px) {
+      #how_to_trade_block .price_block {
+        margin-left: calc((100% - 260px) / 2); } }
     #how_to_trade_block .price_block a.get_price_tradeblock {
       width: 260px;
       border-radius: 5px;
@@ -550,6 +669,10 @@ textarea.box_input {
       font-size: 24px;
       margin-right: 10px;
       display: inline-block; }
+      @media (max-width: 767px) {
+        #how_to_trade_block .price_block a.get_price_tradeblock {
+          display: block;
+          margin-top: 17px; } }
     #how_to_trade_block .price_block a.get_price_bottom_tradeblock {
       width: 260px;
       border-radius: 5px;
@@ -565,6 +688,9 @@ textarea.box_input {
       font-size: 24px;
       border: 1px solid black;
       display: inline-block; }
+      @media (max-width: 767px) {
+        #how_to_trade_block .price_block a.get_price_bottom_tradeblock {
+          display: block; } }
   #how_to_trade_block img.circle_left {
     position: absolute;
     left: 120px;
@@ -573,6 +699,9 @@ textarea.box_input {
     @media (max-width: 1200px) {
       #how_to_trade_block img.circle_left {
         left: 16%; } }
+    @media (max-width: 767px) {
+      #how_to_trade_block img.circle_left {
+        top: -230px; } }
   #how_to_trade_block img.circle_middle {
     position: absolute;
     right: 50%;
@@ -581,6 +710,10 @@ textarea.box_input {
     transform: translateX(110px);
     top: -240px;
     width: 220px; }
+    @media (max-width: 767px) {
+      #how_to_trade_block img.circle_middle {
+        top: -60px;
+        right: 40%; } }
   #how_to_trade_block img.circle_right {
     position: absolute;
     right: 200px;
@@ -598,12 +731,12 @@ textarea.box_input {
   padding-top: 80px; }
   #quote_block ul {
     width: 680px;
-    height: 500px;
+    height: auto;
     margin: -70px auto 0; }
     @media (max-width: 1200px) {
       #quote_block ul {
         margin: 0px auto 0; } }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       #quote_block ul {
         width: 70%; } }
     #quote_block ul div {
@@ -634,13 +767,22 @@ textarea.box_input {
     #quote_block ul li:nth-child(odd) {
       background-color: #eeeeee; }
   #quote_block .p_block {
-    margin-top: 90px;
+    margin-top: 16px;
     margin-left: 100px; }
+    @media (max-width: 767px) {
+      #quote_block .p_block {
+        margin-left: 110px;
+        width: 70%;
+        text-align: left;
+        margin-left: 15%; } }
     #quote_block .p_block p {
       display: inline-block;
       font-size: 10px;
       text-align: left;
       margin-right: 16px; }
+      @media (max-width: 1023px) {
+        #quote_block .p_block p {
+          display: block; } }
   #quote_block a.get_price_quoteblock {
     width: 260px;
     border-radius: 5px;
@@ -657,6 +799,9 @@ textarea.box_input {
     margin-right: 10px;
     display: inline-block;
     margin-top: 60px; }
+    @media (max-width: 767px) {
+      #quote_block a.get_price_quoteblock {
+        border-radius: 20px; } }
 
 #faqs_block {
   padding-top: 60px; }
@@ -693,6 +838,9 @@ textarea.box_input {
         margin-bottom: 24px;
         font-size: 22px;
         line-height: 33px; }
+        @media (max-width: 767px) {
+          #faqs_block div div p.question {
+            width: 85%; } }
       #faqs_block div div p.answer {
         margin-left: 64px;
         margin-bottom: 12px;
@@ -714,6 +862,9 @@ textarea.box_input {
       #contact_block iframe {
         width: 70%;
         margin-left: 15%; } }
+    @media (max-width: 767px) {
+      #contact_block iframe {
+        height: -webkit-fill-available; } }
   #contact_block .small_font {
     font-size: 18px;
     line-height: 27px;
@@ -724,6 +875,10 @@ textarea.box_input {
         margin-left: 15%;
         margin-top: 12px;
         width: 70%; } }
+    @media (max-width: 767px) {
+      #contact_block .small_font {
+        margin-bottom: 0;
+        margin-top: 26px; } }
   #contact_block a {
     background: url(../images/fb-icon-fake.png) no-repeat;
     background-size: 40px 40px;
@@ -788,6 +943,10 @@ footer {
       footer a.bottom_item1 {
         right: auto;
         left: 26%; } }
+    @media (max-width: 767px) {
+      footer a.bottom_item1 {
+        right: auto;
+        left: 21%; } }
   footer a.bottom_item2 {
     position: absolute;
     top: 0;

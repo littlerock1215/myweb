@@ -39,6 +39,13 @@ header{
         height:31.5px;
         text-decoration: none;
         display:inline-block;
+
+        @include susy-breakpoint($mobile){
+            
+            width:154px;
+            height:20px;
+            background-size:154px 20px;
+        }
     }
 
     ul.nav_mainpage{
@@ -46,7 +53,11 @@ header{
         float:right;
         margin-top:0px;
         margin-right:0px;
-
+        
+        @include susy-breakpoint(('max-width':1023px)){
+            
+            display:none;
+        }
         li{
             float:left;
 
@@ -69,6 +80,11 @@ header{
     background: url(../images/bg.png) no-repeat;
     background-size: 100% auto;
     background-position: 0 770px;
+
+    @include susy-breakpoint(('max-width':767px)){
+            
+        padding:180px 20px 32px;
+    }
 }
 
 p.subtitle{
@@ -86,6 +102,11 @@ p.subtitle{
         margin:0 auto 10px;
         max-width:550px;
     }
+
+    @include susy-breakpoint(('max-width':767px)){
+            
+        width:90%;
+    }
 }
 
 .trading_service_block{
@@ -96,7 +117,7 @@ p.subtitle{
 
     .content{
 
-        z-index:999;
+        z-index:399;
         position:relative;
     }
 
@@ -113,6 +134,21 @@ p.subtitle{
             width: 70%;
             margin:0 auto 20px;
             max-width: 550px;
+        }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            width: 70%;
+            margin:60px auto 20px;
+            max-width: 550px;
+        }
+
+        @include susy-breakpoint($mobile){
+            
+            width: 100%;
+            font-size:26px;
+            margin:0px auto 20px;
+            line-height: 30px;
         }
     }
 
@@ -135,6 +171,19 @@ p.subtitle{
             width: 70%;
             margin:0 auto 10px;
             max-width:550px;
+        }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            width: 70%;
+            font-size:14px;
+        }
+
+        @include susy-breakpoint($mobile){
+            
+            width: 100%;
+            font-size:10px;
+            line-height:18px;
         }
     }
 
@@ -161,6 +210,21 @@ p.subtitle{
             margin:10px auto;
             max-width:550px;
         }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            border-radius: 20px;
+        }
+
+        @include susy-breakpoint($mobile){
+            
+            font-size:12px;
+            line-height: 14px;
+            padding-top:4px;
+            padding-bottom: 4px;
+            width:100%;
+            border-radius: 10px;
+        }
     }
 
     a.get_price_bottom{
@@ -186,6 +250,21 @@ p.subtitle{
             margin:10px auto;
             max-width:550px;
         }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            border-radius: 20px;
+        }
+
+        @include susy-breakpoint($mobile){
+            
+            font-size:12px;
+            line-height: 14px;
+            padding-top:4px;
+            padding-bottom: 4px;
+            width:100%;
+            border-radius: 10px;
+        }
     }
 
     p.trading_time{
@@ -193,10 +272,40 @@ p.subtitle{
         font-size:10px;
         margin-top:40px;
         margin-bottom:40px;
+        display:inline-block;
 
         @include susy-breakpoint(('max-width':1200px)){
             
             text-align: center;
+        }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            display:block;
+            margin-bottom: 0;
+            text-align: left;
+            margin-top:200px;
+            
+        }
+    }
+
+    p.trading_time2{
+
+        font-size:10px;
+        margin-top:40px;
+        margin-bottom:40px;
+        display:inline-block;
+
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            text-align: center;
+        }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            display:block;
+            margin-top:0;
+            text-align: left;
         }
     }
 
@@ -214,6 +323,19 @@ p.subtitle{
         @include susy-breakpoint(('max-width':1300px)){
             
             right:2%;
+        }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            top:-180px;
+        }
+
+        @include susy-breakpoint($mobile){
+            
+            background-size:140px auto; 
+            width:140px;
+            height:116px;
+            top:-130px;
         }
     }
 
@@ -237,6 +359,20 @@ p.subtitle{
             
             right:auto;
         }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            top:310px;
+        }
+
+        @include susy-breakpoint($mobile){
+            
+            background-size:140px auto; 
+            width:140px;
+            height:102px;
+            top: 290px;
+            left: -70px;
+        }
     }
 
     .coin_bottom{
@@ -253,6 +389,19 @@ p.subtitle{
         @include susy-breakpoint(('max-width':1300px)){
             
             right:2%;
+        }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            top:470px;
+        }
+
+        @include susy-breakpoint($mobile){
+            
+            background-size:140px auto; 
+            width:140px;
+            height:116px;
+            top:430px;
         }
     }
 }
@@ -455,6 +604,10 @@ textarea.box_input{
         width:100%;
     }
     
+    @include susy-breakpoint(('max-width':767px)){
+            
+        padding-top:200px;
+    }
 
     ul{
         margin-top: 40px;
@@ -476,6 +629,11 @@ textarea.box_input{
                 margin-left:40px;
             }
 
+            @include susy-breakpoint(('max-width':767px)){
+            
+                margin-left:20px;
+            }
+
             img{
                 width:40px;
                 margin-top:6px;
@@ -491,6 +649,11 @@ textarea.box_input{
                 font-weight: 600;
                 margin-top:0px;
                 margin-bottom:16px;
+
+                @include susy-breakpoint(('max-width':767px)){
+            
+                    margin-left:10px;
+                }
             }
 
             p{
@@ -498,13 +661,22 @@ textarea.box_input{
                 margin-left: 72px;
                 margin-bottom: 10px;
                 max-width: 980px;
+
+                @include susy-breakpoint(('max-width':767px)){
+            
+                    margin-left:52px;
+                }
             }
         }
     }
     .price_block{
 
         margin-left:calc((100% - 530px) / 2);
-        //margin-bottom: 60px;
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            margin-left:calc((100% - 260px) / 2);
+        }
 
         a.get_price_tradeblock{
 
@@ -522,6 +694,12 @@ textarea.box_input{
             font-size: 24px;
             margin-right:10px;
             display:inline-block;
+
+            @include susy-breakpoint(('max-width':767px)){
+            
+                display:block;
+                margin-top: 17px;
+            }
         }
 
         a.get_price_bottom_tradeblock{
@@ -540,6 +718,11 @@ textarea.box_input{
             font-size: 24px;
             border:1px solid black;
             display:inline-block;
+
+            @include susy-breakpoint(('max-width':767px)){
+            
+                display:block;
+            }
         }
 
     }
@@ -555,6 +738,11 @@ textarea.box_input{
             
             left: 16%;
         }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            top:-230px;
+        }
     }
 
     img.circle_middle{
@@ -564,6 +752,12 @@ textarea.box_input{
         transform: translateX(110px);
         top: -240px;
         width: 220px;
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            top:-60px;
+            right:40%;
+        }
     }
 
     img.circle_right{
@@ -590,7 +784,7 @@ textarea.box_input{
 
     ul{
         width: 680px;
-        height: 500px;
+        height: auto;
         margin: -70px auto 0;
         
         @include susy-breakpoint(('max-width':1200px)){
@@ -598,7 +792,7 @@ textarea.box_input{
             margin: 0px auto 0;
         }
 
-        @include susy-breakpoint(('max-width':768px)){
+        @include susy-breakpoint(('max-width':767px)){
             
             width:70%;
         }
@@ -655,14 +849,29 @@ textarea.box_input{
 
     .p_block{
 
-        margin-top:90px;
+        margin-top:16px;
         margin-left:100px;
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            margin-left: 110px;
+            width: 70%;
+            text-align: left;
+            margin-left: 15%;
+        }
+
+        
 
         p{
             display:inline-block;
             font-size:10px;
             text-align: left;
             margin-right: 16px;
+
+            @include susy-breakpoint(('max-width':1023px)){
+            
+                display:block;
+            }
         }
     }
 
@@ -683,6 +892,11 @@ textarea.box_input{
         margin-right:10px;
         display:inline-block;
         margin-top:60px;
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            border-radius: 20px;
+        }
     }
 }
 
@@ -734,6 +948,11 @@ textarea.box_input{
                 margin-bottom: 24px;
                 font-size:22px;
                 line-height: 33px;
+
+                @include susy-breakpoint(('max-width':767px)){
+            
+                    width: 85%;
+                }
             }
 
             p.answer{
@@ -767,6 +986,11 @@ textarea.box_input{
             width: 70%;
             margin-left:15%;
         }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            height: -webkit-fill-available;
+        }
     }
 
     .small_font{
@@ -781,6 +1005,12 @@ textarea.box_input{
             margin-left:15%;
             margin-top:12px;
             width:70%;
+        }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            margin-bottom: 0;
+            margin-top:26px;
         }
     }
 
@@ -879,6 +1109,12 @@ footer{
             
             right: auto;
             left: 26%;
+        }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            right: auto;
+            left: 21%;
         }
     }
 

@@ -78,7 +78,8 @@
                 <p class="content_font">The BTC Shop is made up of a team of trusted brokers  with excellent bitcoin and cryptocurrency knowledge. We have been trading Bitcoin in Hong Kong for more than 5 years and lead the industry in terms of reliability affordability,safety and convenience.</p>
                 <a href="#" class="get_price">取得報價<br/>Contact us</a>
                 <a href="#quote_block" id="div5Link" class="get_price_bottom">先看匯率<br/>View exchange rate</a>
-                <p class="trading_time">交易時間：周一至周五9:00至23:00 | 周六日9:00至23:00 Trading Hours: Monday to Friday 9:00~23:00 | Weekend 9:00至23:00</p>
+                <p class="trading_time">交易時間：周一至周五9:00至23:00 | 周六日9:00至23:00</p>
+                <p class="trading_time2">Trading Hours: Monday to Friday 9:00~23:00 | Weekend 9:00至23:00</p>
             </div>
             
             
