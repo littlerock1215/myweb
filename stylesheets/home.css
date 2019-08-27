@@ -223,9 +223,37 @@ header {
     margin-right: 0px; }
     @media (max-width: 1023px) {
       header ul.nav_mainpage {
-        display: none; } }
+        display: none;
+        float: none;
+        z-index: 999;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        background: #121212;
+        height: calc(100% - 80px);
+        top: 80px;
+        margin: 0 auto;
+        overflow: hidden;
+        color: #ffffff; }
+        header ul.nav_mainpage.active {
+          display: block; } }
+    @media (max-width: 550px) {
+      header ul.nav_mainpage {
+        display: none; }
+        header ul.nav_mainpage.active {
+          display: block;
+          height: calc(100% - 60px);
+          top: 60px;
+          position: fixed; } }
     header ul.nav_mainpage li {
       float: left; }
+      @media (max-width: 1023px) {
+        header ul.nav_mainpage li {
+          display: block;
+          width: auto;
+          text-align: initial;
+          height: auto;
+          line-height: 17px; } }
       header ul.nav_mainpage li a {
         text-decoration: none;
         display: block;
@@ -1250,3 +1278,9 @@ label.error {
   bottom: 3%;
   outline: none;
   cursor: pointer; }
+
+.main_menu_hamburger {
+  display: none; }
+  @media (max-width: 1023px) {
+    .main_menu_hamburger {
+      display: block; } }

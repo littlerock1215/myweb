@@ -37,13 +37,13 @@
         <button type="button" id="BackTop"  class="top"></button>
         
 
-        <!-- <a href="/" class="main_menu_hamburger" title="手機選單">
+        <a href="/" class="main_menu_hamburger" title="手機選單">
             <div class="in">
                 <span class= line1></span>
                 <span class= line2></span>
                 <span class= line3></span>
             </div>
-        </a> -->
+        </a>
 
         <ul  class="nav_mainpage clearfix">
 
