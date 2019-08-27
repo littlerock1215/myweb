@@ -241,6 +241,7 @@ header {
 .light_box {
   display: block;
   width: calc( 100% - 300px);
+  max-width: 1070px;
   position: absolute;
   top: 50px;
   left: 50%;
@@ -314,12 +315,18 @@ header {
       -moz-appearance: none;
       -webkit-appearance: none;
       background: url(../images/arrow.png) no-repeat scroll right center transparent;
-      background-position: calc(100% - 14px); }
+      background-position: calc(100% - 14px);
+      font-size: 20px;
+      background-size: 20px; }
       .light_box form.apply_form select:focus {
         outline: none; }
       @media (max-width: 1100px) {
         .light_box form.apply_form select {
           width: 72%; } }
+      @media (max-width: 1024px) {
+        .light_box form.apply_form select {
+          font-size: 15px;
+          background-size: 14px; } }
       @media (max-width: 767px) {
         .light_box form.apply_form select {
           background-size: 10px; } }
@@ -327,7 +334,8 @@ header {
         .light_box form.apply_form select {
           width: 72%;
           border-radius: 40px;
-          height: 56px; } }
+          height: 56px;
+          font-size: 10px; } }
     .light_box form.apply_form select::-ms-expand {
       display: none; }
     .light_box form.apply_form button {
@@ -432,11 +440,10 @@ input.box_input {
 textarea.box_input {
   display: inline-block;
   width: 600px;
-  height: auto;
   border: 0;
   border-bottom: 1px solid #515151;
-  font-size: 30px;
-  min-height: 34px; }
+  font-size: 24px;
+  height: 50px; }
   textarea.box_input:focus {
     outline: none; }
   @media (max-width: 1100px) {
@@ -444,7 +451,10 @@ textarea.box_input {
       width: 72%; } }
   @media (max-width: 550px) {
     textarea.box_input {
-      width: 70%; } }
+      width: 70%;
+      font-size: 10px;
+      line-height: 20px;
+      height: 40px; } }
 
 .jconfirm-box {
   width: 300px; }

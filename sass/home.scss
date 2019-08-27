@@ -505,6 +505,7 @@ p.subtitle{
 
     display:none;
     width: calc( 100% - 300px);
+    max-width: 1070px;
     position: absolute;
     top: 50px;
     left: 50%;
@@ -733,11 +734,10 @@ textarea.box_input{
     
     display:inline-block;
     width:600px;
-    height:auto;
     border: 0;
     border-bottom: 1px solid #515151;
     font-size:30px;
-    min-height: 34px;
+    height: 34px;
 
     &:focus{
 
@@ -1054,9 +1054,15 @@ textarea.box_input{
             padding-top: 8px;
             margin: 0 auto;
             font-size: 16px;
-            line-height: 18px;
+            line-height: 20px;
             background-color: #dcdcdc;
             padding-bottom: 8px;
+
+            @include susy-breakpoint($mobile){
+            
+                font-size: 14px;
+                line-height: 18px;
+            }
 
             p{
                 display:inline-block;
@@ -1064,8 +1070,6 @@ textarea.box_input{
 
                 @include susy-breakpoint(('max-width':767px)){
             
-                    font-size: 7px;
-                    line-height: 13px;
                     width: 30%;
                 }   
             }
@@ -1077,8 +1081,14 @@ textarea.box_input{
             padding-top: 8px;
             margin: 0 auto;
             font-size: 16px;
-            line-height: 18px;
+            line-height: 20px;
             padding-bottom: 8px;
+
+            @include susy-breakpoint($mobile){
+            
+                font-size: 14px;
+                line-height: 18px;
+            }
 
             p{
                 display:inline-block;
@@ -1088,8 +1098,6 @@ textarea.box_input{
 
                 @include susy-breakpoint(('max-width':767px)){
             
-                    font-size: 7px;
-                    line-height: 13px;
                     width: 30%;
                 }   
             }
@@ -1374,24 +1382,19 @@ textarea.box_input{
 
     a{
 
-        background:url(../images/fb-icon-fake.png) no-repeat;
-        background-size:40px 40px;
-        background-position: 0 0;
-        width:40px;
-        height:40px;
         text-decoration: none;
         display:block;
         position: absolute;
-        top:750px;
+        top:760px;
 
         @include susy-breakpoint(('max-width':767px)){
             
-            top:540px;
+            top:520px;
         }
         
         @include susy-breakpoint($mobile){
             
-            top:420px;
+            top:440px;
             background-size:20px 20px;
             background-position: 0 0;
             width:20px;
@@ -1402,10 +1405,22 @@ textarea.box_input{
     a.fb1{
 
         right:calc((100% - 800px) / 2);
+        background:url(../images/whatsapp-icon-fake.png) no-repeat;
+        background-size:58px 59px;
+        background-position: 0 0;
+        width:58px;
+        height:59px;
 
         @include susy-breakpoint(('max-width':1200px)){
             
             right:15%;
+        }
+
+        @include susy-breakpoint($pad){
+            
+            background-size:40px 40px;
+            width:40px;
+            height:40px;
         }
 
         @include susy-breakpoint($mobile){
@@ -1417,6 +1432,7 @@ textarea.box_input{
     a.fb2{
 
         right:calc(((100% - 800px) / 2) + 60px);
+        display:none;
 
         @include susy-breakpoint(('max-width':1200px)){
             

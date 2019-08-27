@@ -537,6 +537,7 @@ p.subtitle {
 .light_box {
   display: none;
   width: calc( 100% - 300px);
+  max-width: 1070px;
   position: absolute;
   top: 50px;
   left: 50%;
@@ -698,11 +699,10 @@ input.box_input {
 textarea.box_input {
   display: inline-block;
   width: 600px;
-  height: auto;
   border: 0;
   border-bottom: 1px solid #515151;
   font-size: 30px;
-  min-height: 34px; }
+  height: 34px; }
   textarea.box_input:focus {
     outline: none; }
 
@@ -918,24 +918,30 @@ textarea.box_input {
       padding-top: 8px;
       margin: 0 auto;
       font-size: 16px;
-      line-height: 18px;
+      line-height: 20px;
       background-color: #dcdcdc;
       padding-bottom: 8px; }
+      @media (max-width: 550px) {
+        #quote_block ul div {
+          font-size: 14px;
+          line-height: 18px; } }
       #quote_block ul div p {
         display: inline-block;
         width: 120px; }
         @media (max-width: 767px) {
           #quote_block ul div p {
-            font-size: 7px;
-            line-height: 13px;
             width: 30%; } }
     #quote_block ul li {
       text-align: center;
       padding-top: 8px;
       margin: 0 auto;
       font-size: 16px;
-      line-height: 18px;
+      line-height: 20px;
       padding-bottom: 8px; }
+      @media (max-width: 550px) {
+        #quote_block ul li {
+          font-size: 14px;
+          line-height: 18px; } }
       #quote_block ul li p {
         display: inline-block;
         color: black;
@@ -943,8 +949,6 @@ textarea.box_input {
         width: 120px; }
         @media (max-width: 767px) {
           #quote_block ul li p {
-            font-size: 7px;
-            line-height: 13px;
             width: 30%; } }
     #quote_block ul li:nth-child(even) {
       background-color: white; }
@@ -1134,35 +1138,41 @@ textarea.box_input {
         margin-left: 0;
         width: 100%; } }
   #contact_block a {
-    background: url(../images/fb-icon-fake.png) no-repeat;
-    background-size: 40px 40px;
-    background-position: 0 0;
-    width: 40px;
-    height: 40px;
     text-decoration: none;
     display: block;
     position: absolute;
-    top: 750px; }
+    top: 760px; }
     @media (max-width: 767px) {
       #contact_block a {
-        top: 540px; } }
+        top: 520px; } }
     @media (max-width: 550px) {
       #contact_block a {
-        top: 420px;
+        top: 440px;
         background-size: 20px 20px;
         background-position: 0 0;
         width: 20px;
         height: 20px; } }
   #contact_block a.fb1 {
-    right: calc((100% - 800px) / 2); }
+    right: calc((100% - 800px) / 2);
+    background: url(../images/whatsapp-icon-fake.png) no-repeat;
+    background-size: 58px 59px;
+    background-position: 0 0;
+    width: 58px;
+    height: 59px; }
     @media (max-width: 1200px) {
       #contact_block a.fb1 {
         right: 15%; } }
+    @media (max-width: 1023px) {
+      #contact_block a.fb1 {
+        background-size: 40px 40px;
+        width: 40px;
+        height: 40px; } }
     @media (max-width: 550px) {
       #contact_block a.fb1 {
         right: 0%; } }
   #contact_block a.fb2 {
-    right: calc(((100% - 800px) / 2) + 60px); }
+    right: calc(((100% - 800px) / 2) + 60px);
+    display: none; }
     @media (max-width: 1200px) {
       #contact_block a.fb2 {
         right: 23%; } }

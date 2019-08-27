@@ -34,7 +34,7 @@
 <body>
 
 <header class="header clearfix">
-        <a class="logo" href="#" title="Tradecoin4u"></a>
+        <a class="logo" href="/" title="Tradecoin4u"></a>
         
 
         <!-- <a href="/" class="main_menu_hamburger" title="手機選單">
