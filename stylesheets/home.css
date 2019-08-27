@@ -538,9 +538,9 @@ p.subtitle {
       top: 24px; }
       @media (max-width: 767px) {
         .light_box .box_top a.cancel {
-          width: 40px;
-          height: 40px;
-          background-size: 40px 40px; } }
+          width: 30px;
+          height: 30px;
+          background-size: 30px 30px; } }
   .light_box form.apply_form {
     background-color: white;
     padding-top: 31px;
