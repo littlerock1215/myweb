@@ -1147,9 +1147,10 @@ textarea.box_input{
                 width:100%;
                 padding-bottom: 2px;
             }
-
-            a{
-
+            .btn_active{
+                background:url(../images/pulse.png) no-repeat;
+            }
+            button{
                 background:url(../images/icon.png) no-repeat;
                 background-size:30px 30px;
                 background-position: 0 0;
@@ -1160,6 +1161,10 @@ textarea.box_input{
                 margin-top: 16px;
                 margin-left: 16px;
                 margin-right: 14px;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
             
                 &.active{
 
@@ -1205,7 +1210,7 @@ textarea.box_input{
             }
 
             p.answer{
-
+                display: none;
                 margin-left: 64px;
                 margin-bottom: 12px;
                 font-size: 18px;
@@ -1532,7 +1537,6 @@ label.error{
     background-size: cover;
     background-color: transparent;
     border: none;
-    background-color: transparent;
     border: none;
     right: 2%;
     bottom: 3%;
