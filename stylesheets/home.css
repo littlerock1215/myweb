@@ -225,16 +225,15 @@ header {
       header ul.nav_mainpage {
         display: none;
         float: none;
-        z-index: 999;
+        z-index: 800;
         position: absolute;
         left: 0px;
         right: 0px;
         background: #121212;
-        height: calc(100% - 80px);
-        top: 80px;
+        height: 600px;
+        top: 70px;
         margin: 0 auto;
-        overflow: hidden;
-        color: #ffffff; }
+        overflow: hidden; }
         header ul.nav_mainpage.active {
           display: block; } }
     @media (max-width: 550px) {
@@ -253,7 +252,16 @@ header {
           width: auto;
           text-align: initial;
           height: auto;
-          line-height: 17px; } }
+          line-height: 17px;
+          float: unset;
+          line-height: 26px;
+          margin-left: 50%;
+          -webkit-transform: translateX(-40px);
+          -ms-transform: translateX(-40px);
+          transform: translateX(-40px);
+          margin-bottom: 35px; }
+          header ul.nav_mainpage li:first-child {
+            margin-top: 33px; } }
       header ul.nav_mainpage li a {
         text-decoration: none;
         display: block;
@@ -262,6 +270,13 @@ header {
         color: black;
         margin-right: 40px;
         font-weight: 600; }
+        @media (max-width: 1023px) {
+          header ul.nav_mainpage li a {
+            color: #ffffff; } }
+        @media (max-width: 550px) {
+          header ul.nav_mainpage li a {
+            font-size: 16px;
+            line-height: 24px; } }
 
 .main_userpage {
   padding: 120px 20px 32px;
@@ -698,12 +713,15 @@ textarea.box_input {
   @media (max-width: 1200px) {
     #how_to_trade_block {
       width: 100%; } }
+  @media (max-width: 1023px) {
+    #how_to_trade_block {
+      padding-top: 70px; } }
   @media (max-width: 767px) {
     #how_to_trade_block {
       padding-top: 200px; } }
   @media (max-width: 550px) {
     #how_to_trade_block {
-      padding-top: 0; } }
+      padding-top: 60px; } }
   #how_to_trade_block ul {
     margin-top: 40px;
     margin-left: 180px; }
@@ -881,7 +899,7 @@ textarea.box_input {
   padding-top: 80px; }
   @media (max-width: 550px) {
     #quote_block {
-      padding-top: 40px; } }
+      padding-top: 60px; } }
   #quote_block ul {
     width: 680px;
     height: auto;
@@ -987,6 +1005,9 @@ textarea.box_input {
 
 #faqs_block {
   padding-top: 60px; }
+  @media (max-width: 1023px) {
+    #faqs_block {
+      padding-top: 70px; } }
   #faqs_block div {
     margin-left: calc((100% - 800px ) / 2);
     width: 800px; }
@@ -1006,9 +1027,9 @@ textarea.box_input {
           width: 100%;
           padding-bottom: 2px; } }
       #faqs_block div div .btn_active {
-        background: url(../images/pulse.png) no-repeat; }
+        background: url(../images/icon.png) no-repeat; }
       #faqs_block div div button {
-        background: url(../images/icon.png) no-repeat;
+        background: url(../images/pulse.png) no-repeat;
         background-size: 30px 30px;
         background-position: 0 0;
         width: 30px;
@@ -1069,9 +1090,12 @@ textarea.box_input {
   background-size: 100% auto;
   background-position: 0 270px;
   padding-top: 60px; }
+  @media (max-width: 1023px) {
+    #contact_block {
+      padding-top: 70px; } }
   @media (max-width: 550px) {
     #contact_block {
-      padding-top: 20px; } }
+      padding-top: 60px; } }
   #contact_block iframe {
     margin-left: calc((100% - 800px) / 2);
     width: 800px;
@@ -1285,8 +1309,71 @@ label.error {
   outline: none;
   cursor: pointer; }
 
-.main_menu_hamburger {
+a.main_menu_hamburger {
   display: none; }
   @media (max-width: 1023px) {
-    .main_menu_hamburger {
-      display: block; } }
+    a.main_menu_hamburger {
+      display: table-row;
+      position: fixed;
+      top: 30px;
+      right: 15px;
+      z-index: 999;
+      text-decoration: none;
+      -webkit-transition: all 0.3s 0s;
+      -o-transition: all 0.3s 0s;
+      transition: all 0.3s 0s;
+      width: 40px;
+      height: 40px; }
+      a.main_menu_hamburger span {
+        display: block;
+        height: 1px;
+        width: 30px;
+        background: #121212;
+        margin: 0 auto;
+        -webkit-transition: all .4s 0s;
+        -o-transition: all .4s 0s;
+        transition: all .4s 0s;
+        -webkit-transform: rotate(0deg) translate(0, 0);
+        -ms-transform: rotate(0deg) translate(0, 0);
+        transform: rotate(0deg) translate(0, 0); } }
+    @media (max-width: 1023px) and (max-width: 550px) {
+      a.main_menu_hamburger span {
+        width: 20px; } }
+  @media (max-width: 1023px) {
+      a.main_menu_hamburger span.line2 {
+        margin: 8px auto; } }
+    @media (max-width: 1023px) and (max-width: 550px) {
+      a.main_menu_hamburger span.line2 {
+        margin: 4px auto; } }
+  @media (max-width: 1023px) {
+      a.main_menu_hamburger.active span {
+        -webkit-transition: all .2s 0s;
+        -o-transition: all .2s 0s;
+        transition: all .2s 0s; }
+      a.main_menu_hamburger.active span.line1 {
+        -webkit-transform: translate(0, 8px) rotate(45deg);
+        -ms-transform: translate(0, 8px) rotate(45deg);
+        transform: translate(0, 8px) rotate(45deg); } }
+    @media (max-width: 1023px) and (max-width: 550px) {
+      a.main_menu_hamburger.active span.line1 {
+        -webkit-transform: translate(0, 5px) rotate(45deg);
+        -ms-transform: translate(0, 5px) rotate(45deg);
+        transform: translate(0, 5px) rotate(45deg); } }
+  @media (max-width: 1023px) {
+      a.main_menu_hamburger.active span.line3 {
+        -webkit-transform: translate(0, -10px) rotate(-45deg);
+        -ms-transform: translate(0, -10px) rotate(-45deg);
+        transform: translate(0, -10px) rotate(-45deg); } }
+    @media (max-width: 1023px) and (max-width: 550px) {
+      a.main_menu_hamburger.active span.line3 {
+        -webkit-transform: translate(0, -5px) rotate(-45deg);
+        -ms-transform: translate(0, -5px) rotate(-45deg);
+        transform: translate(0, -5px) rotate(-45deg); } }
+  @media (max-width: 1023px) {
+      a.main_menu_hamburger.active span.line2 {
+        opacity: 0; } }
+  @media (max-width: 550px) {
+    a.main_menu_hamburger {
+      top: 22px;
+      width: 20px;
+      width: 20px; } }

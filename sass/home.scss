@@ -58,16 +58,15 @@ header{
         
             display:none;
             float: none; 
-            z-index: 999;
+            z-index:800;
             position: absolute;
             left: 0px;
             right: 0px;
             background: #121212;
-            height: calc(100% - 80px);
-            top: 80px;
+            height: 600px;
+            top: 70px;
             margin:0 auto;
             overflow:hidden;
-            color:#ffffff;
     
             &.active{
     
@@ -91,6 +90,8 @@ header{
         li{
             float:left;
 
+            
+
             @include susy-breakpoint(('max-width':1023px)){
             
                 display:block;
@@ -98,6 +99,16 @@ header{
                 text-align: initial;
                 height:auto;
                 line-height: 17px;
+                float: unset;
+                line-height: 26px;
+                margin-left: 50%;
+                transform: translateX(-40px);
+                margin-bottom: 35px;
+
+                &:first-child{
+
+                    margin-top:33px;
+                }
             }
 
             a{
@@ -108,6 +119,17 @@ header{
                 color:black;
                 margin-right:40px;
                 font-weight: 600;
+
+                @include susy-breakpoint(('max-width':1023px)){
+            
+                    color:#ffffff;
+                }
+               
+                @include susy-breakpoint($mobile){
+                        
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
         }
     }
@@ -733,6 +755,11 @@ textarea.box_input{
             
         width:100%;
     }
+
+    @include susy-breakpoint(('max-width':1023px)){
+            
+        padding-top: 70px;
+    }
     
     @include susy-breakpoint(('max-width':767px)){
             
@@ -741,7 +768,7 @@ textarea.box_input{
 
     @include susy-breakpoint($mobile){
             
-        padding-top:0;
+        padding-top:60px;
     }
 
     ul{
@@ -998,7 +1025,7 @@ textarea.box_input{
 
     @include susy-breakpoint($mobile){
             
-        padding-top: 40px;
+        padding-top: 60px;
     }
 
     ul{
@@ -1163,6 +1190,11 @@ textarea.box_input{
 
     padding-top:60px;
 
+    @include susy-breakpoint(('max-width':1023px)){
+            
+        padding-top:70px;
+    }
+
     div{
         margin-left: calc((100% - 800px ) / 2);
         width: 800px;
@@ -1187,10 +1219,10 @@ textarea.box_input{
                 padding-bottom: 2px;
             }
             .btn_active{
-                background:url(../images/pulse.png) no-repeat;
+                background:url(../images/icon.png) no-repeat;
             }
             button{
-                background:url(../images/icon.png) no-repeat;
+                background:url(../images/pulse.png) no-repeat;
                 background-size:30px 30px;
                 background-position: 0 0;
                 width:30px;
@@ -1275,9 +1307,14 @@ textarea.box_input{
     background-position: 0 270px;
     padding-top:60px;
 
+    @include susy-breakpoint(('max-width':1023px)){
+            
+        padding-top:70px;
+    }
+
     @include susy-breakpoint($mobile){
                         
-        padding-top:20px;
+        padding-top:60px;
     }
     
     iframe{
@@ -1583,12 +1620,83 @@ label.error{
     cursor: pointer;
 }
 
-.main_menu_hamburger{
+a.main_menu_hamburger{
 
     display:none;
+    
+    @include susy-breakpoint($pad){
+        
+        display:table-row;
+        position:fixed;
+        top:30px;
+        right:15px;
+        z-index:999;
+        text-decoration:none;
+        transition:all 0.3s 0s;
+        width: 40px;
+        height: 40px;
+        
+        span{
 
-    @include susy-breakpoint(('max-width':1023px)){
-            
-        display:block;
+            display:block;
+            height:1px;
+            width:30px;
+            background:#121212;
+            margin:0 auto;
+            transition:all .4s 0s;
+            transform: rotate(0deg) translate(0,0);
+
+            @include susy-breakpoint($mobile){
+
+                width:20px;
+            }
+        }
+
+        span.line2{
+
+            margin:8px auto;
+
+            @include susy-breakpoint($mobile){
+
+                margin:4px auto;
+            }
+        }
+
+        &.active{
+
+            span{
+                transition:all .2s 0s;
+            }
+
+            span.line1{
+                
+                transform: translate(0,8px) rotate(45deg);
+
+                @include susy-breakpoint($mobile){
+
+                    transform: translate(0,5px) rotate(45deg);
+                }
+            }
+
+            span.line3{
+                transform: translate(0,-10px) rotate(-45deg);
+
+                @include susy-breakpoint($mobile){
+
+                    transform: translate(0,-5px) rotate(-45deg);
+                }
+            }
+
+            span.line2{
+                opacity:0;
+            }
+        }
+    }
+
+    @include susy-breakpoint($mobile){
+
+        top:22px;
+        width:20px;
+        width:20px;
     }
 }

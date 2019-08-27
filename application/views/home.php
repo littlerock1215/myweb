@@ -32,9 +32,9 @@
 </head>
 
 <body>
-    <header class="header clearfix">
+    <header href="#goup" class="header clearfix">
         <a class="logo" href="#" title="Tradecoin4u"></a>
-        <button type="button" id="BackTop"  class="top"></button>
+        <button type="button" id="BackTop" class="top"></button>
         
 
         <a href="/" class="main_menu_hamburger" title="手機選單">
@@ -48,7 +48,7 @@
         <ul  class="nav_mainpage clearfix">
 
             <li>
-                <a id="div6Link" href="#top" class="how_to_trade" title="首頁">首頁<br/>Home</a>
+                <a href="#" class="how_to_trade" title="首頁">首頁<br/>Home</a>
             </li>
 
             <li>
@@ -72,7 +72,7 @@
     </header>
 
     <div class="main_userpage">
-        <div id="#top" class="trading_service_block">
+        <div id="goup" class="trading_service_block">
             <div class="content">
                 <p class="title">線上換匯所<br/>OTC trading service </p>
                 <p class="content_font">BTC Shop是由一群值得信賴的經紀人團隊組成，<br/> 團員擁有卓越的比特幣及加密貨幣知識。<br/> 我們在香港交易比特幣已超過5年，<br/>並在可靠性，經濟性，安全性和便利性方面的優勢引領行業。</p>
@@ -387,7 +387,7 @@ $(document).ready(function(){
 
     $("#div6Link").click(function() {
     $("html, body").animate({
-    scrollTop: $("#top").offset().top }, {duration: 500,easing: "swing"});
+    scrollTop: $("#goup").offset().top }, {duration: 500,easing: "swing"});
     return false;
     });
 

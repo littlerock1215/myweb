@@ -150,6 +150,22 @@ $(document).ready(function(){
             }
         });
 
+        //below is the nav_mainpage click function in hamburger style
+
+        $('.nav_mainpage>li>a').click(function(e){
+
+            if($('.nav_mainpage').hasClass('active')){
+
+            $('body').removeClass('open');
+            $('.main_menu_hamburger').removeClass('active');
+            //$('.nav_mainpage').show();
+            $('.nav_mainpage').removeClass('active');
+            //$('.nav_mainpage').perfectScrollbar('destroy');
+
+            }
+        });
+
+
     //below is the click and add active_class function of the button in the left side
     
     // $('.user_leftside>ul>li>button').click(function(e){
