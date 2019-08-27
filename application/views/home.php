@@ -218,34 +218,34 @@
             <p class="subtitle">常見問題<br/>FAQs</p>
             <div>
                 <div>
-                    <a href="#"></a>
+                    <button type="button" onclick="open_drop(this)" class="q1" href="#"></button>
                     <p class="question">為什麼使用Email?<br/>Why use Email to trade?</p>
-                    <p class="answer">Email是受歡迎的即時通訊移動應用程序。 它使我們能夠覆蓋更廣泛的受眾。 除此之外，所有Email訊息都經端對端加密保障，對我們來說確保你的數據安全是非常重要。</p>
-                    <p class="answer">Email is the popular IM mobile app . It allow us to reach wider audience.  Beside that, all Email and calls are secured with end-to-end encryption, it is very important for us to make sure all your data is safe.</p>
+                    <p class="answer a1">Email是受歡迎的即時通訊移動應用程序。 它使我們能夠覆蓋更廣泛的受眾。 除此之外，所有Email訊息都經端對端加密保障，對我們來說確保你的數據安全是非常重要。</p>
+                    <p class="answer a1">Email is the popular IM mobile app . It allow us to reach wider audience.  Beside that, all Email and calls are secured with end-to-end encryption, it is very important for us to make sure all your data is safe.</p>
                 </div>
                 <div>
-                    <a href="#"></a>
+                    <button type="button" onclick="open_drop(this)" class="q2" href="#"></button>
                     <p class="question">如何開一個比特幣錢包?<br/>How to open a Bitcoin Wallet?</p>
-                    <p class="answer">取得比特幣之前，更要先準備好存放比特幣的軟體錢包。我們建議使用 Blockchain.com. 一個簡單易用,及安全的比特幣錢包</p>
+                    <p class="answer a2">取得比特幣之前，更要先準備好存放比特幣的軟體錢包。我們建議使用 Blockchain.com. 一個簡單易用,及安全的比特幣錢包</p>
                     
                 </div>
                 <div>
-                    <a href="#"></a>
+                    <button type="button" onclick="open_drop(this)" class="q3" href="#"></button>
                     <p class="question">最低交易量是多少？<br/>what is the minimum trading volume?</p>
-                    <p class="answer">最低交易額為港幣二千五百元。港幣一萬元以下的交易我們會收取轉帳費。</p>
-                    <p class="answer">The minimum trade amount is HK$ 2,500.00. We will charge transfer fee for transactions under HK $ 10,000.</p>
+                    <p class="answer a3">最低交易額為港幣二千五百元。港幣一萬元以下的交易我們會收取轉帳費。</p>
+                    <p class="answer a3">The minimum trade amount is HK$ 2,500.00. We will charge transfer fee for transactions under HK $ 10,000.</p>
                 </div>
                 <div>
-                    <a href="#"></a>
+                    <button type="button" onclick="open_drop(this)" class="q4" href="#"></button>
                     <p class="question">誰支付礦工費？<br/>Who pays for the miners fee?</p>
-                    <p class="answer">為了使我們的交易簡單快捷，發送數字資產的人將支付礦工的費用。 例如，如果您從我們購買10ETH，您將會收到10ETH，反之亦然，如果您向我們出售10ETH，我們將期待收到10ETH。如果收取的數量與我們談洽有出入，我們會按比例調整。<br/>>港幣一萬元以下的交易我們會收取轉帳費。 </p>
-                    <p class="answer">In order to make our transaction smoothly, whoever sends the digital assets will pays for the miners fee. For example, if you are buying 10ETH from us, you will be expecting to receive 10ETH, vice versa, if you are selling 10ETH from us, we will be expecting to receive 10ETH.<br/>>We will charge transfer fee for transactions under HK $ 10,000.</p>
+                    <p class="answer a4">為了使我們的交易簡單快捷，發送數字資產的人將支付礦工的費用。 例如，如果您從我們購買10ETH，您將會收到10ETH，反之亦然，如果您向我們出售10ETH，我們將期待收到10ETH。如果收取的數量與我們談洽有出入，我們會按比例調整。<br/>>港幣一萬元以下的交易我們會收取轉帳費。 </p>
+                    <p class="answer a4">In order to make our transaction smoothly, whoever sends the digital assets will pays for the miners fee. For example, if you are buying 10ETH from us, you will be expecting to receive 10ETH, vice versa, if you are selling 10ETH from us, we will be expecting to receive 10ETH.<br/>>We will charge transfer fee for transactions under HK $ 10,000.</p>
                 </div>
                 <div>
-                    <a href="#"></a>
+                    <button type="button" onclick="open_drop(this)" class="q5" href="#"></button>
                     <p class="question">如果交易在10分鐘內沒有完成會如何處理？<br/>What happen if the transaction not complete within 10 mins?</p>
-                    <p class="answer">如果10分鐘內不能成功付款，我們提供的價格不再有效。如果因網絡速度影響，10分鐘內沒法確認轉賬，轉賬確認後我們會給您一個新的報價，如果您不同意，所有的資金都會發送到您所提供的地址。你將需要支付此轉賬所產生的費用。</p>
-                    <p class="answer">If you cannot pay in 10 mins, the price we provided is no longer valid. If the network is slow and no confirmation from the network within 10 mins, we will give you a new quotation, if you do not agree,  all the fund will send  to the address you provided and you will need to pay for the fees. </p>
+                    <p class="answer a5">如果10分鐘內不能成功付款，我們提供的價格不再有效。如果因網絡速度影響，10分鐘內沒法確認轉賬，轉賬確認後我們會給您一個新的報價，如果您不同意，所有的資金都會發送到您所提供的地址。你將需要支付此轉賬所產生的費用。</p>
+                    <p class="answer a5">If you cannot pay in 10 mins, the price we provided is no longer valid. If the network is slow and no confirmation from the network within 10 mins, we will give you a new quotation, if you do not agree,  all the fund will send  to the address you provided and you will need to pay for the fees. </p>
                 </div>
             </div>
 
@@ -278,15 +278,27 @@ $(document).ready(function(){
     $('#BackTop').click(function(){ 
 		$('html,body').animate({scrollTop:0}, 333);
 	});
-	// $(window).scroll(function() {
-	// 	if ( $(this).scrollTop() > 300 ){
-	// 		$('#BackTop').fadeIn(222);
-	// 	} else {
-	// 		$('#BackTop').stop().fadeOut(222);
-	// 	}
-	// }).scroll();
-    
-    
+
+    $('.q1').click(function(){
+    $('.a1').toggle();
+    });
+
+    $('.q2').click(function(){
+    $('.a2').toggle();
+    });
+
+    $('.q3').click(function(){
+    $('.a3').toggle();
+    });
+
+    $('.q4').click(function(){
+    $('.a4').toggle();
+    });
+
+    $('.q5').click(function(){
+    $('.a5').toggle();
+    });
+
     //the price click function
 
     $('a.get_price').click(function(e){
@@ -390,6 +402,16 @@ $(document).ready(function(){
      
 });
 
+function open_drop(btn){
+        if($(btn).hasClass('btn_active')){
+            $(btn).removeClass('btn_active');
+            $(btn).closest('answer').hide();
+        }else{
+            $(btn).addClass('btn_active');
+            $(btn).closest('answer').show();
+        }
+}
+
     function submit_form(){
         if($('form.apply_form').valid()){
             $.confirm({
@@ -445,6 +467,10 @@ $(document).ready(function(){
             });
         }
     }
+
+
+
+
 </script>
 
 </body>

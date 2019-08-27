@@ -1005,7 +1005,9 @@ textarea.box_input {
           padding-right: 10px;
           width: 100%;
           padding-bottom: 2px; } }
-      #faqs_block div div a {
+      #faqs_block div div .btn_active {
+        background: url(../images/pulse.png) no-repeat; }
+      #faqs_block div div button {
         background: url(../images/icon.png) no-repeat;
         background-size: 30px 30px;
         background-position: 0 0;
@@ -1015,11 +1017,15 @@ textarea.box_input {
         text-decoration: none;
         margin-top: 16px;
         margin-left: 16px;
-        margin-right: 14px; }
-        #faqs_block div div a.active {
+        margin-right: 14px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer; }
+        #faqs_block div div button.active {
           background: url(../images/pulse.png) no-repeat; }
         @media (max-width: 550px) {
-          #faqs_block div div a {
+          #faqs_block div div button {
             margin-top: 6px;
             margin-left: 6px;
             margin-right: 6px;
@@ -1045,6 +1051,7 @@ textarea.box_input {
             font-size: 11px;
             line-height: 16px; } }
       #faqs_block div div p.answer {
+        display: none;
         margin-left: 64px;
         margin-bottom: 12px;
         font-size: 18px;
@@ -1272,7 +1279,6 @@ label.error {
   background-size: cover;
   background-color: transparent;
   border: none;
-  background-color: transparent;
   border: none;
   right: 2%;
   bottom: 3%;
