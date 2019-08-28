@@ -92,7 +92,7 @@ class Price extends CI_Controller {
                 $mail_info['body']= $this->load->view('mail_template/price_mail',$data,true);
 
                 
-                $mail_info['to']='a0905078881@gmail.com';
+                $mail_info['to']='littlerock1215@hotmail.com';
                 $mail_info['to_name']='';
                 $send_status=$this->mail_model->send($mail_info);
 
