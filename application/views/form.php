@@ -95,7 +95,7 @@
                         <p class="title_p">購買數量<br/>Amount：</p>
                         <input class="box_input" type="text" name="amount" autocomplete="off" required>
                         <p class="title_p">備註<br/>Note : </p>
-                        <textarea class="box_input" type="text" name="note"></textarea>
+                        <input class="box_input" type="text" name="note" autocomplete="off">
                         <button type="button" onclick="submit_form()">送出<br/>Submit</button>
                         
                     </form>
