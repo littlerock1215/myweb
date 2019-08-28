@@ -84,6 +84,14 @@
                             <option value="">請選擇幣種&nbsp;Please select a currency</option>
                             <option value="BTC">比特幣 Bitcoin</option>
                             <option value="ETH">以太幣 Ethereum</option>
+                            <option value="EOS">柚子幣 EOS</option>
+                            <option value="LTC">萊特幣 Litecoin</option>
+                            <option value="BCH">比特幣現金 BCH</option>
+                            <option value="XRP">瑞波幣 Ripple</option>
+                            <option value="XLM">Stellar (XLM)</option>
+                            <option value="ADA">Cardano (ADA)</option>
+                            <option value="DASH">達世幣 Dash</option>
+                            <option value="USDT">泰達幣 USDT</option>
                         </select>
                         
                         <p class="purchase_p">支付幣種<span>Purchase<br/>currency：</span></p>
