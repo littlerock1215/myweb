@@ -303,7 +303,7 @@ $(document).ready(function(){
 
     $('a.get_price').click(function(e){
 
-       // e.preventDefault();
+       e.preventDefault();
         
         // if($('.light_box_wrap').hasClass('active')){
         //     $('light_box_wrap').removeClass('active');
@@ -347,7 +347,7 @@ $(document).ready(function(){
 
     $('a.cancel').click(function(e){
 
-        //e.preventDefault();
+        e.preventDefault();
 
         $('.light_box_wrap').removeClass('active');
         $('.light_box').removeClass('active');
