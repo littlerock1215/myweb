@@ -150,17 +150,17 @@
                 </div>
 
                 <div class="circle_middle">
-                    <p class="circle_title">安全</p>
-                    <p class="circle_title_en">SAFE</p>
-                    <p class="circle_content">與交易所不同，您不需要開設任何戶口<br/>您的資金不會受到被監管風險</p>
-                    <p class="circle_content_en">Unlike other digital asset and <br/>bitcoin exchanges<br/>, you don’t need an account <br/>to shop with us.</p>
+                    <p class="circle_title">快速交易</p>
+                    <p class="circle_title_en">FAST SETTLEMENT</p>
+                    <p class="circle_content">大部分買賣15分鐘內完成<br/>交易過程方便快捷</p>
+                    <p class="circle_content_en">Most OTC trades settled <br/>within 15mins, <br/>trading process is <br/>simple and easy.</p>
                 </div>
 
                 <div class="circle_right">
-                    <p class="circle_title">安全</p>
-                    <p class="circle_title_en">SAFE</p>
-                    <p class="circle_content">與交易所不同，您不需要開設任何戶口<br/>您的資金不會受到被監管風險</p>
-                    <p class="circle_content_en">Unlike other digital asset and <br/>bitcoin exchanges<br/>, you don’t need an account <br/>to shop with us.</p>
+                    <p class="circle_title">靈活支付</p>
+                    <p class="circle_title_en">FLEXIBLE</p>
+                    <p class="circle_content">可以使用多間本地銀行轉賬交易</p>
+                    <p class="circle_content_en">Local banks transfer available.</p>
                 </div>
 
             
