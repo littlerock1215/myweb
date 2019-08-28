@@ -357,7 +357,7 @@ p.subtitle{
 
         @include susy-breakpoint($mobile){
             
-            margin-top:130px;
+            margin-top:150px;
             font-size:6px;
         }
     }
@@ -941,18 +941,21 @@ textarea.box_input{
 
             }   
         }
-
     }
     
-    img.circle_left{
+    .circle_left{
 
         position: absolute;
         left: 120px;
         top: -400px;
-        width: 190px;
+        background: url(../images/circle_left_new.png) no-repeat;
+        background-size: 260px auto;
+        background-position: 0 0;
+        width: 260px;
+        height: 260px;
 
         @include susy-breakpoint(('max-width':1200px)){
-            
+                
             left: 16%;
         }
 
@@ -960,23 +963,59 @@ textarea.box_input{
             
             top:-230px;
         }
-
+        
         @include susy-breakpoint($mobile){
             
-            width: 133px;
+            background-size: 133px auto;
             right: 2%;
             left: auto;
             top:-200px;
         }
+        
+        p.circle_title{
+
+            text-align: center;
+            font-size:22px;
+            line-height:28px;
+            margin-top:74px;
+        }
+
+        p.circle_title_en{
+
+            text-align: center;
+            font-size:20px;
+            line-height:28px;
+            margin-bottom: 4px;
+            
+        }
+
+        .circle_content{
+
+            text-align: center;
+            font-size:14px;
+            line-height:16px;
+            margin-bottom: 4px;
+        }
+
+        .circle_content_en{
+
+            text-align: center;
+            font-size:14px;
+            line-height:16px;
+        }
     }
 
-    img.circle_middle{
+    .circle_middle{
 
         position: absolute;
+        background: url(../images/middle_circle_new.gif) no-repeat;
+        background-size: 260px auto;
+        background-position: 0 0;
+        width: 260px;
+        height: 260px;
         right: 50%;
-        transform: translateX(110px);
+        transform: translateX(130px);
         top: -240px;
-        width: 220px;
 
         @include susy-breakpoint(('max-width':767px)){
             
@@ -986,31 +1025,100 @@ textarea.box_input{
 
         @include susy-breakpoint($mobile){
             
-            
             width: 133px;
             left:4%;
             top:-290px;
             transform: none;
             right:auto;
+            background-size: 133px auto;
+        }
+        
+        p.circle_title{
+
+            text-align: center;
+            font-size:22px;
+            line-height:28px;
+            margin-top:74px;
+        }
+
+        p.circle_title_en{
+
+            text-align: center;
+            font-size:20px;
+            line-height:28px;
+            margin-bottom: 4px;
+        }
+
+        .circle_content{
+
+            text-align: center;
+            font-size:14px;
+            line-height:16px;
+            margin-bottom: 4px;
+        }
+
+        .circle_content_en{
+
+            text-align: center;
+            font-size:14px;
+            line-height:16px;
         }
     }
 
-    img.circle_right{
+    .circle_right{
 
         position: absolute;
+        background: url(../images/right_circle_new.gif) no-repeat;
+        background-size: 260px auto;
+        background-position: 0 0;
+        width: 260px;
+        height: 260px;
         right: 200px;
         top: -400px;
-        width: 190px;
 
         @include susy-breakpoint(('max-width':1200px)){
             
             right: 16%;
         }
-
+        
         @include susy-breakpoint($mobile){
             
+            background-size: 133px auto;
             right: 2%;
-            width: 133px;
+            left: auto;
+            top:-200px;
+        }
+        
+        p.circle_title{
+
+            text-align: center;
+            font-size:22px;
+            line-height:28px;
+            margin-top:74px;
+        }
+
+        p.circle_title_en{
+
+            text-align: center;
+            font-size:20px;
+            line-height:28px;
+            margin-bottom: 4px;
+            
+        }
+
+        .circle_content{
+
+            text-align: center;
+            font-size:14px;
+            line-height:16px;
+            margin-bottom: 4px;
+        }
+
+        .circle_content_en{
+
+            text-align: center;
+            font-size:14px;
+            line-height:16px;
         }
     }
 }
@@ -1215,6 +1323,7 @@ textarea.box_input{
         }
 
         div{
+
             background-color: #eeeeee;
             margin-bottom: 8px;
             padding-bottom: 16px;
@@ -1226,10 +1335,15 @@ textarea.box_input{
                 width:100%;
                 padding-bottom: 2px;
             }
+
             .btn_active{
+
                 background:url(../images/icon.png) no-repeat;
+                background-size: 30px auto;
             }
+
             button{
+
                 background:url(../images/pulse.png) no-repeat;
                 background-size:30px 30px;
                 background-position: 0 0;
@@ -1289,6 +1403,7 @@ textarea.box_input{
             }
 
             p.answer{
+                
                 display: none;
                 margin-left: 64px;
                 margin-bottom: 12px;

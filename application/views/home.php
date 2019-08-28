@@ -142,9 +142,28 @@
                     </form>
                 </div>
             </div>
-            <img class="circle_left" src="/images/circle_left_new@2x.png">
-            <img class="circle_middle" src="/images/circle_middle_new.png">
-            <img class="circle_right" src="/images/circle_right_new.png">
+                <div class="circle_left">
+                    <p class="circle_title">安全</p>
+                    <p class="circle_title_en">SAFE</p>
+                    <p class="circle_content">與交易所不同，您不需要開設任何戶口<br/>您的資金不會受到被監管風險</p>
+                    <p class="circle_content_en">Unlike other digital asset and <br/>bitcoin exchanges<br/>, you don’t need an account <br/>to shop with us.</p>
+                </div>
+
+                <div class="circle_middle">
+                    <p class="circle_title">安全</p>
+                    <p class="circle_title_en">SAFE</p>
+                    <p class="circle_content">與交易所不同，您不需要開設任何戶口<br/>您的資金不會受到被監管風險</p>
+                    <p class="circle_content_en">Unlike other digital asset and <br/>bitcoin exchanges<br/>, you don’t need an account <br/>to shop with us.</p>
+                </div>
+
+                <div class="circle_right">
+                    <p class="circle_title">安全</p>
+                    <p class="circle_title_en">SAFE</p>
+                    <p class="circle_content">與交易所不同，您不需要開設任何戶口<br/>您的資金不會受到被監管風險</p>
+                    <p class="circle_content_en">Unlike other digital asset and <br/>bitcoin exchanges<br/>, you don’t need an account <br/>to shop with us.</p>
+                </div>
+
+            
         </div>
 
 
