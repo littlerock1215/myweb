@@ -286,9 +286,9 @@
         <h6>Copyright © tradecoin4u</h6>
         <h4>免責聲明:  投資涉及風險，代幣價格有時會大幅波動，價格可升亦可跌，更可變得毫無價值。投資未必一定能夠賺取利潤，反而可能會招致損失，往績數字並非未來表現的指標。投資前應先閱讀有關產品的發售文件、財務及相關的風險聲明，.並應就本身的財政、其他狀況及需要詳細考慮並考慮決定投資是否切合本身特定的投資需要。<a href="#">了解更多>></a></h4>
         <a href="#" class="back_top" href="#"></a>
-        <a href="#" class="bottom_item1" href="#">服務條款<br/>&nbsp;&nbsp;Terms and Conditions </a>
-        <a href="#" class="bottom_item2" href="#">防洗錢政策<br/>&nbsp;&nbsp;&nbsp;&nbsp;AML Policy </a>
-        <a href="#" class="bottom_item3" href="#">隱私政策<br/>&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy </a>
+        <a href="/terms" class="bottom_item1" href="#">服務條款<br/>&nbsp;&nbsp;Terms and Conditions </a>
+        <a href="/aml" class="bottom_item2" href="#">防洗錢政策<br/>&nbsp;&nbsp;&nbsp;&nbsp;AML Policy </a>
+        <a href="/privacy" class="bottom_item3" href="#">隱私政策<br/>&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy </a>
     </footer>
 
 <script>

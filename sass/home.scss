@@ -1661,6 +1661,10 @@ p.circle_title_en{
         width:58px;
         height:59px;
 
+        &:hover{
+            opacity: 0.8;
+        }
+
         @include susy-breakpoint(('max-width':1200px)){
             
             right:15%;
@@ -1770,6 +1774,10 @@ footer{
         display: block;
         color:#000000;
 
+        &:hover{
+            opacity:0.8;
+        }
+
         @include susy-breakpoint(('max-width':1200px)){
             
             right: auto;
@@ -1808,6 +1816,10 @@ footer{
         display: block;
         color:#000000;
 
+        &:hover{
+            opacity:0.8;
+        }
+
         @include susy-breakpoint(('max-width':1200px)){
             
             right: auto;
@@ -1839,6 +1851,10 @@ footer{
         text-decoration: none;
         display: block;
         color:#000000;
+
+        &:hover{
+            opacity:0.8;
+        }
 
         @include susy-breakpoint(('max-width':1200px)){
             
@@ -1884,6 +1900,10 @@ label.error{
     bottom: 3%;
     outline: none;
     cursor: pointer;
+    
+    &:hover{
+        opacity: 0.8;
+    }
 }
 
 a.main_menu_hamburger{
