@@ -918,8 +918,12 @@ textarea.box_input {
       #how_to_trade_block .circle_middle p.circle_title {
         margin-top: 60px; } }
     #how_to_trade_block .circle_middle p.circle_content_en {
-      width: 140px;
-      margin-left: 24px; }
+      width: 230px;
+      margin-left: 20px; }
+      @media (max-width: 550px) {
+        #how_to_trade_block .circle_middle p.circle_content_en {
+          width: 140px;
+          margin-left: 24px; } }
   #how_to_trade_block .circle_right {
     position: absolute;
     background: url(../images/right_circle_new.gif) no-repeat;
