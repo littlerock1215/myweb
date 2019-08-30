@@ -108,9 +108,23 @@ class Price extends CI_Controller {
             }
 
             echo json_encode($return);
-        // }else{
-        //     redirect(base_url(),'refresh');
-        // }
+
+        //inset data to database
+
+            $this->load->database();
+        
+            $row_data['email'] = $this->input->post('email');
+            $row_data['phone'] = $this->input->post('phone');
+            $row_data['currency_tobuy'] = $this->input->post('currency_tobuy');
+            $row_data['currency_topay'] = $this->input->post('currency_topay');
+            $row_data['amount'] = $this->input->post('amount');
+            $row_data['note'] = $this->input->post('note');
+    
+            if($row_data['email']!='' && $row_data['phone']!=''){
+                $this->db->insert('quote',$row_data);
+            }else{
+            }
+
     }
     public function get_price()
     {
