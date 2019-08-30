@@ -108,7 +108,7 @@
             <p>By voluntarily providing us with personal data, you are consenting to our use of it in accordance with this Privacy Policy. If you provide personal data to us, you acknowledge and agree that such personal data may be transferred from your current location to the offices and servers of Quanli Technology and the authorized third parties referred to in this policy.</p>
             <p class="title">How We Protect The Data We Collect</p>
             <p>We use reasonable physical, electronic and procedural safeguards to protect the personal information that we obtain from you from loss, misuse, and unauthorized access, disclosure, alteration, and destruction. Please note that we are not responsible for the security of any data you are transmitting over the Internet, or any data you are storing, posting, or providing directly to a third party’s website, which is governed by that party’s policies. Please note that no method of transmission over the Internet or method of electronic storage is 100% secure. If you have further questions about security, you can contact us at 
-                <a>littlerock1215@hotmail.com</a>
+                <a class="link">littlerock1215@hotmail.com</a>
             </p>
             <p class="title">Data Retention</p>
             <p>We may retain information about you in our databases for as long as needed to provide you services and in accordance with applicable laws. Our retention and use of your information will be as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements. The retention period may extend beyond the end of your relationship with us, but it will be only as long as it is necessary for us to have sufficient information to respond to any issues that may arise later. For example, we may need or be required to retain certain information to prevent fraudulent activity, protect ourselves against liability, permit us to pursue available remedies or limit any damages that we may sustain, or if we believe in good faith that a law, regulation, rule or guideline requires it.</p>
@@ -133,8 +133,8 @@
             <p>We may make changes to this Privacy Policy. If we make changes, we will notify you by revising the date at the top of the policy. If we make material changes, we will do so in accordance with applicable legal requirements, and we will post a notice on our website and mobile applications alerting you to the material changes prior to such changes becoming effective. We encourage you to periodically review this page for the latest information on our privacy practices.</p>
             <p class="title">Contact Us</p>
             <p>To keep your personal data accurate, current, and complete, please contact us as specified below. We will take reasonable steps to update or correct personal data in our possession that you have previously submitted using our services. Please also feel free to contact us if you have any questions about our Privacy Policy or the information practices of the BTC Shop Hong Kong Services.</p>
-            <p>You may contact us emailing to:
-                <a>littlerock1215@hotmail.com</a>
+            <p>You may <a href="mailto:service@tradecoin4u.com" class="contact">contact us</a>
+                
             </p>
         
             <a class="back" href="/" title="back">返回首頁</a>

@@ -207,7 +207,7 @@ header {
   .content p {
     margin-bottom: 12px;
     line-height: 26px; }
-    .content p a {
+    .content p a.link {
       color: blue; }
   .content p.title {
     font-weight: 800;
@@ -235,4 +235,17 @@ a.back {
   padding: 10px;
   border-radius: 10px; }
   a.back:hover {
+    opacity: 0.8; }
+
+a.mail {
+  text-decoration: none;
+  color: blue; }
+
+a.contact {
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding: 2px 6px;
+  border-radius: 5px; }
+  a.contact:hover {
     opacity: 0.8; }
