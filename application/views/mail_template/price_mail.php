@@ -86,20 +86,19 @@ $url = 'https://ava-ico.com/';
 							
 							<p>線上換匯所<br/>OTC trading service </p>
 
-							<p>客戶的emil:&nbsp;<?=$email?></p>
+							<p>客戶信箱：&nbsp;<?=$email?></p>
 							
 
-							<p>客戶的購買幣種為<?=$currency_tobuy?></p>
-							<p>現在<?=$currency_tobuy?> 幣值為</p>
-							<p style="color:blue"><?=$price_data[$currency_tobuy]?></p>
+							<p>購買幣種：&nbsp;<?=$currency_tobuy?></p>
+							<p style="color:blue">幣種現值：&nbsp;<?=$price_data[$currency_tobuy]?></p>
 
-							<p>自上述時間起，此購買價格為15分鐘內有效。</p>
-							<p>轉帳資料如下</p>
-							<p>客戶的購買數量<?=$amount?></p>
+							<!-- <p>自上述時間起，此購買價格為15分鐘內有效。</p> -->
+							<!-- <p>轉帳資料如下</p> -->
+							<p>購買數量：&nbsp;<?=$amount?></p>
 
-							<p>總額為<?=$price_data[$currency_tobuy]*$amount?>美金</p>
+							<p>應付真實總金額：&nbsp;<?=$price_data[$currency_tobuy]*$amount?>美金</p>
 							
-							<p>客戶的支付幣種為<?=$currency_topay?></p>
+							<p>支付幣種：&nbsp;<?=$currency_topay?></p>
 
 						</td>
 					</tr>

@@ -97,8 +97,8 @@
                         <p class="purchase_p">支付幣種<span>Purchase<br/>currency：</span></p>
                         <select name="currency_topay" required>
                             <option value="">請選擇幣種&nbsp;Please select a currency</option>
-                            <option value="USD">美金</option>
-                            <option value="HK">港幣</option>
+                            <option value="美金">美金</option>
+                            <option value="港幣">港幣</option>
                         </select>
                         <p class="title_p">購買數量<br/>Amount：</p>
                         <input class="box_input" type="text" name="amount" autocomplete="off" required>

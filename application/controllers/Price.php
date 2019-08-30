@@ -83,6 +83,8 @@ class Price extends CI_Controller {
                 $this->load->model('mail_model');
                 $mail_info['subject']= '報價單';
 
+                $data['subject']= '報價單';
+
                 $data['price_data'] = $this->get_price();
                 $data['email'] = $email;
                 $data['amount'] = $amount;
