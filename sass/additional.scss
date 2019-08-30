@@ -38,6 +38,11 @@ header{
         a.link{
             color:blue;
         }
+
+        @include susy-breakpoint($mobile){
+                
+            line-height: 20px;
+        }
     }
 
     p.title{
@@ -45,6 +50,11 @@ header{
         font-weight: 800;
         font-size: 18px;
         margin-top: 8px;
+
+        @include susy-breakpoint(('max-width':767px)){
+                
+            font-size:16px;
+        }
     }
 
     ul{
@@ -56,6 +66,12 @@ header{
             margin-bottom: 12px;
             margin-left: 40px;
             line-height: 26px;
+
+            @include susy-breakpoint(('max-width':767px)){
+                
+                margin-left:18px;
+                line-height: 20px;
+            }
         }
 
         li.strong{
@@ -82,6 +98,12 @@ a.back{
 
         opacity:0.8;
     }
+
+    @include susy-breakpoint(('max-width':767px)){
+                
+        width:80px;
+        font-size:16px;
+    }
 }
 
 a.mail{
@@ -101,5 +123,43 @@ a.contact{
     &:hover{
         opacity:0.8;
     }
-    
+
+    @include susy-breakpoint(('max-width':767px)){
+            
+        font-size:14px;
+    }
 }
+
+.light_box{
+
+    @include susy-breakpoint($pad){
+            
+        width: calc( 100% - 100px);
+    }
+
+    @include susy-breakpoint(('max-width':767px)){
+            
+        width: 90%;
+    }
+
+    .box_top{
+
+        @include susy-breakpoint($pad){
+                
+            font-size:24px;
+        }
+
+        @include susy-breakpoint(('max-width':767px)){
+                
+            font-size:16px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+        }
+    }
+}
+
+span{
+
+    font-style:italic;
+}
+

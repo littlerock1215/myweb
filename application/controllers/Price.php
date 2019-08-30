@@ -87,9 +87,11 @@ class Price extends CI_Controller {
 
                 $data['price_data'] = $this->get_price();
                 $data['email'] = $email;
+                $data['phone'] = $phone;
                 $data['amount'] = $amount;
                 $data['currency_tobuy'] = $currency_tobuy;
                 $data['currency_topay'] = $currency_topay;
+                $data['note'] = $note;
                 $data['content'] = '以下是報價單及轉帳地址';
                 $mail_info['body']= $this->load->view('mail_template/price_mail',$data,true);
 

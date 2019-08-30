@@ -84,10 +84,10 @@ $url = 'https://ava-ico.com/';
                         <td style="font-family: '微軟正黑體', 'Microsoft JhengHei', 'Adobe 繁黑體 Std B', '儷黑 Pro'">
                             <br />
 							
-							<p>線上換匯所<br/>OTC trading service </p>
+							<!-- <p>線上換匯所<br/>OTC trading service </p> -->
 
 							<p>客戶信箱：&nbsp;<?=$email?></p>
-							
+							<p>客戶手機：&nbsp;<?=$phone?></p>
 
 							<p>購買幣種：&nbsp;<?=$currency_tobuy?></p>
 							<p style="color:blue">幣種現值：&nbsp;<?=$price_data[$currency_tobuy]?></p>
@@ -99,6 +99,8 @@ $url = 'https://ava-ico.com/';
 							<p>應付真實總金額：&nbsp;<?=$price_data[$currency_tobuy]*$amount?>美金</p>
 							
 							<p>支付幣種：&nbsp;<?=$currency_topay?></p>
+
+							<p>客戶備註：&nbsp;<?=$note?></p>
 
 						</td>
 					</tr>
