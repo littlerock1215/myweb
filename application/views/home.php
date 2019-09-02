@@ -99,8 +99,8 @@
                 <li>
                     <img src="images/1.png">
                     <p class="li_p_header">聯絡我們<br/>CONTACT US</p>
-                    <P>利用 WHATSAPP 傳送訊息給我們，告訴我們你想交易什麼，然後我們會給你作出報價。第一次買家需要提供身份證副本作紀錄。</P>
-                    <P>Contact us with WHATSAPP and tell us what you would like to trade. We will give you a quotation. First time buyer must provide HKID copy for record.</P>
+                    <P>利用 WhatsApp 傳送訊息給我們，告訴我們你想交易什麼，然後我們會給你作出報價。第一次買家需要提供身份證副本作紀錄。</P>
+                    <P>Contact us with WhatsApp and tell us what you would like to trade. We will give you a quotation. First time buyer must provide HKID copy for record.</P>
                 </li>
                 <li>
                     <img src="images/2.png">
@@ -131,11 +131,11 @@
                         <p class="vip_p">Tradecoin4u 高級客戶認證<br/>交易量首次達到1百萬港元以上客戶需要填寫此表格<br/>For the all users who reach the transaction volume over HK$1 million.<br/>Customers need to fill out this form.</p>
                         <div class="link">
                             <!-- <a href="/form">Email</a> -->
-                            <a href="https://api.whatsapp.com/send?phone=85264114188&text=%E6%88%91%E5%B0%8DCrptoExchange%E6%9C%89%E8%88%88%E8%B6%A3">WhatsApp</a>
+                            <a href="https://api.WhatsApp.com/send?phone=85264114188&text=%E6%88%91%E5%B0%8DCrptoExchange%E6%9C%89%E8%88%88%E8%B6%A3">WhatsApp</a>
                         </div>
                         
                         <!-- <input type="radio" name="contact_way" value="email"> Email<br>
-                        <input type="radio" name="contact_way" value="whatsapp"> WhatsApp<br>
+                        <input type="radio" name="contact_way" value="WhatsApp"> WhatsApp<br>
                         
                         <button type="button" onclick="submit_form()">送出<br/>Submit</button> -->
                         
@@ -240,9 +240,9 @@
             <div>
                 <div>
                     <button type="button" onclick="open_drop(this)" class="q1" href="#"></button>
-                    <p class="question">為什麼使用 WHATSAPP?<br/>Why use WHATSAPP to trade?</p>
-                    <p class="answer a1">WHATSAPP 是受歡迎的即時通訊移動應用程序。 它使我們能夠覆蓋更廣泛的受眾。 除此之外，所有 WHATSAPP 訊息都經端對端加密保障，對我們來說確保你的數據安全是非常重要。</p>
-                    <p class="answer a1">WHATSAPP is the popular IM mobile app . It allow us to reach wider audience.  Beside that, all WHATSAPP and calls are secured with end-to-end encryption, it is very important for us to make sure all your data is safe.</p>
+                    <p class="question">為什麼使用 WhatsApp?<br/>Why use WhatsApp to trade?</p>
+                    <p class="answer a1">WhatsApp 是受歡迎的即時通訊移動應用程序。 它使我們能夠覆蓋更廣泛的受眾。 除此之外，所有 WhatsApp 訊息都經端對端加密保障，對我們來說確保你的數據安全是非常重要。</p>
+                    <p class="answer a1">WhatsApp is the popular IM mobile app . It allow us to reach wider audience.  Beside that, all WhatsApp and calls are secured with end-to-end encryption, it is very important for us to make sure all your data is safe.</p>
                 </div>
                 <div>
                     <button type="button" onclick="open_drop(this)" class="q2" href="#"></button>
@@ -277,7 +277,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.458879417314!2d114.14740784988052!3d22.336295747161124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340407549c6dd40b%3A0x99b07632d57bb1b2!2z6aaZ5riv6ZW35rKZ54Gj6I2U5p6d6KeS6YGTODA46Jmf5aW96YGL5bel5qWt5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1567050999674!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             <p class="small_font">九龍長沙灣荔枝角道808號好運工業中心10樓1005室<br/> Room 1005 Goodluck Industrial Centre, 808 Lai Chi Kok Road, KLN, HK</p>
             <p class="small_font">交易時間：周一至周五9:00至23:00 | 周六日9:00至23:00<br/> Trading Hours: Monday to Friday 9:00~23:00 | Weekend 9:00至23:00</p>
-            <a class="fb1" href="https://api.whatsapp.com/send?phone=85264114188&text=%E6%88%91%E5%B0%8DCrptoExchange%E6%9C%89%E8%88%88%E8%B6%A3"></a>
+            <a class="fb1" href="https://api.WhatsApp.com/send?phone=85264114188&text=%E6%88%91%E5%B0%8DCrptoExchange%E6%9C%89%E8%88%88%E8%B6%A3"></a>
             <a class="fb2" href="#"></a>
         </div>
     </div>
