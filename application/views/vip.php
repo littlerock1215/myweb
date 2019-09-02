@@ -81,10 +81,10 @@
                         <input class="box_input" type="text" name="name" autocomplete="off" required>
                         <p class="title_p">手機<br/>Mobile :</p>
                         <input class="box_input" type="text" name="mobile" autocomplete="off" required>
-                        <p class="title_long">雇主（如果是自僱人士，請描述您的自僱）<br/>Employer (If self-employed, please describe your self-employment)：</p>
-                        <input class="box_input" type="text" name="employer" autocomplete="off" required>
-                        <p class="title_p">職稱/職務<br/>Title/Position：</p>
-                        <input class="box_input" type="text" name="title" autocomplete="off" required>
+                        <p class="title_long ">雇主（如果是自僱人士，請描述您的自僱）<br/>Employer (If self-employed, please describe your self-employment)：</p><br/>
+                        <input class="box_input employer" type="text" name="employer" autocomplete="off" required><br/>
+                        <p class="title_long">職稱/職務<br/>Title/Position：</p><br/>
+                        <input class="box_input employer" type="text" name="title" autocomplete="off" required>
                         <p class="title_p">淨資產<br/>Net worth：</p><br/>
                         <input  type="radio" name="net_worth" value="HK$0-100K">HK$0-100K<br/>
                         <input  type="radio" name="net_worth" value="HK$100-500K">HK$100-500K<br/>
