@@ -74,22 +74,22 @@
         </div>
 
         <div class="content">
-            <p>In response to the scale and effect of money laundering the Hong Kong Government, in common with many other countries, has passed legislation designed to prevent money laundering and to combat terrorism. Although BTC Shop Hong Kong is currently unregulated and does not fall within the scope of the AML/KYC obligations in Hong Kong, we have put in place systems and procedures that meet the Hong Kong AML legislation.</p>
+            <p>In response to the scale and effect of money laundering the Hong Kong Government, in common with many other countries, has passed legislation designed to prevent money laundering and to combat terrorism. Although Tradecoin4u is currently unregulated and does not fall within the scope of the AML/KYC obligations in Hong Kong, we have put in place systems and procedures that meet the Hong Kong AML legislation.</p>
             <p> </p>
             <p class="title">ANTI-MONEY LAUNDERING (AML) AND KNOW-YOUR-CUSTOMER (KYC) POLICY</p>
-            <p>The BTC Shop Hong Kong AML Policy is designed to prevent money laundering by meeting the Hong Kong AML legislation obligations including the need to have adequate systems and controls to mitigate the risk of being used to facilitate financial crime.</p>
-            <p>BTC Shop Hong Kong insists on a comprehensive and thorough KYC and AML compliance framework. This includes monitoring of suspicious transactions and obligatory reporting to local regulators and other compliance bodies.</p>
-            <p>BTC Shop Hong Kong reserves the right to refuse registration to persons from jurisdictions that do not meet international AML standards.</p>
-            <p>BTC Shop Hong Kong reserves the right to carry out customer diligence verification of its users and their transactions. Enhanced customer review will be carried out periodically as part of our ongoing risk assessment. In addition to this, any attempt to abuse BTC Shop Hong Kong or its platform will result in immediate account suspension and reporting violations to respective authorities.</p>
-            <p>The BTC Shop Hong Kong AML and KYC policies are as follows:</p>
+            <p>The Tradecoin4u AML Policy is designed to prevent money laundering by meeting the Hong Kong AML legislation obligations including the need to have adequate systems and controls to mitigate the risk of being used to facilitate financial crime.</p>
+            <p>Tradecoin4u insists on a comprehensive and thorough KYC and AML compliance framework. This includes monitoring of suspicious transactions and obligatory reporting to local regulators and other compliance bodies.</p>
+            <p>Tradecoin4u reserves the right to refuse registration to persons from jurisdictions that do not meet international AML standards.</p>
+            <p>Tradecoin4u reserves the right to carry out customer diligence verification of its users and their transactions. Enhanced customer review will be carried out periodically as part of our ongoing risk assessment. In addition to this, any attempt to abuse Tradecoin4u or its platform will result in immediate account suspension and reporting violations to respective authorities.</p>
+            <p>The Tradecoin4u AML and KYC policies are as follows:</p>
             
             <ul>
-                <li>Transactions conducted via the BTC Shop Hong Kong platform will be subject to AML transaction monitoring.</li>
+                <li>Transactions conducted via the Tradecoin4u platform will be subject to AML transaction monitoring.</li>
                 <li>Identity documents and transaction records will be maintained for at least six years and will be submitted to regulators as required without prior notification to registered users.</li>
-                <li>BTC Shop Hong Kong may at any time without liability and without disclosing any reason, refuse trading with your account. BTC Shop Hong Kong shall notify you after exercising its rights under this clause.</li>
+                <li>Tradecoin4u may at any time without liability and without disclosing any reason, refuse trading with your account. Tradecoin4u shall notify you after exercising its rights under this clause.</li>
             </ul>
             
-            <p>First time traders will be required to verify their identity in line with BTC Shop Hong Kong KYC policy. This includes submission of your government ID. Valid ID includes a passport or Hong Kong national card. Other forms of ID and address verification will not be accepted. You may not start trading until validation has been completed.</p>
+            <p>First time traders will be required to verify their identity in line with Tradecoin4u KYC policy. This includes submission of your government ID. Valid ID includes a passport or Hong Kong national card. Other forms of ID and address verification will not be accepted. You may not start trading until validation has been completed.</p>
             <p> </p>
 
             <a class="back" href="/" title="back">返回首頁</a>

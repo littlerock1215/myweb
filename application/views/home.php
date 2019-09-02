@@ -75,8 +75,8 @@
         <div id="goup" class="trading_service_block">
             <div class="content">
                 <p class="title">線上換匯所<br/>OTC trading service </p>
-                <p class="content_font">BTC Shop是由一群值得信賴的經紀人團隊組成，<br/> 團員擁有卓越的比特幣及加密貨幣知識。<br/> 我們在香港交易比特幣已超過5年，<br/>並在可靠性，經濟性，安全性和便利性方面的優勢引領行業。</p>
-                <p class="content_font">The BTC Shop is made up of a team of trusted brokers  with excellent bitcoin and cryptocurrency knowledge. We have been trading Bitcoin in Hong Kong for more than 5 years and lead the industry in terms of reliability affordability,safety and convenience.</p>
+                <p class="content_font">Tradecoin4u是由一群值得信賴的經紀人團隊組成，<br/> 團員擁有卓越的比特幣及加密貨幣知識。<br/> 我們在香港交易比特幣已超過5年，<br/>並在可靠性，經濟性，安全性和便利性方面的優勢引領行業。</p>
+                <p class="content_font">The Tradecoin4u is made up of a team of trusted brokers  with excellent bitcoin and cryptocurrency knowledge. We have been trading Bitcoin in Hong Kong for more than 5 years and lead the industry in terms of reliability affordability,safety and convenience.</p>
                 <a href="#" class="get_price">取得報價<br/>Contact us</a>
                 <a href="#quote_block" id="div5Link" class="get_price_bottom">先看匯率<br/>View exchange rate</a>
                 <p class="trading_time">交易時間：周一至周五9:00至23:00 | 周六日9:00至23:00</p>
@@ -99,14 +99,14 @@
                 <li>
                     <img src="images/1.png">
                     <p class="li_p_header">聯絡我們<br/>CONTACT US</p>
-                    <P>寄送Email給我們，告訴我們你想交易什麼，然後我們會給你作出報價。第一次買家需要提供身份證副本作紀錄。</P>
-                    <P>Contact us with Email and tell us what you would like to trade. We will give you a quotation. First time buyer must provide HKID copy for record.</P>
+                    <P>利用 WHATSAPP 傳送訊息給我們，告訴我們你想交易什麼，然後我們會給你作出報價。第一次買家需要提供身份證副本作紀錄。</P>
+                    <P>Contact us with WHATSAPP and tell us what you would like to trade. We will give you a quotation. First time buyer must provide HKID copy for record.</P>
                 </li>
                 <li>
                     <img src="images/2.png">
                     <p class="li_p_header">轉帳<br/>TRANSFER</p>
-                    <P>請在10分鐘內匯款到我們提供的賬戶內。</P>
-                    <P>Please transfer the payment to the account we provided within 10 mins.</P>
+                    <P>請在15分鐘內匯款到我們提供的賬戶內。</P>
+                    <P>Please transfer the payment to the account we provided within 15 mins.</P>
                 </li>
                 <li>
                     <img src="images/3.png">
@@ -128,9 +128,9 @@
                     <form class="apply_form">
                         <p class="first_content">請選擇您偏好的聯繫方式，我們會將報價單及轉帳地址以您選擇的方式發送給您<br/>Please select your preferred contact method and we will send you the quotation and transfer address in the way you choose.</p>
                         
-                        <p class="vip_p">BTCShop 高級客戶認證<br/>交易量首次達到1百萬港元以上客戶需要填寫此表格<br/>For the all users who reach the transaction volume over HK$1 million.<br/>Customers need to fill out this form.</p>
+                        <p class="vip_p">Tradecoin4u 高級客戶認證<br/>交易量首次達到1百萬港元以上客戶需要填寫此表格<br/>For the all users who reach the transaction volume over HK$1 million.<br/>Customers need to fill out this form.</p>
                         <div class="link">
-                            <a href="/form">Email</a>
+                            <!-- <a href="/form">Email</a> -->
                             <a href="https://api.whatsapp.com/send?phone=85264114188&text=%E6%88%91%E5%B0%8DCrptoExchange%E6%9C%89%E8%88%88%E8%B6%A3">WhatsApp</a>
                         </div>
                         
@@ -240,9 +240,9 @@
             <div>
                 <div>
                     <button type="button" onclick="open_drop(this)" class="q1" href="#"></button>
-                    <p class="question">為什麼使用Email?<br/>Why use Email to trade?</p>
-                    <p class="answer a1">Email是受歡迎的即時通訊移動應用程序。 它使我們能夠覆蓋更廣泛的受眾。 除此之外，所有Email訊息都經端對端加密保障，對我們來說確保你的數據安全是非常重要。</p>
-                    <p class="answer a1">Email is the popular IM mobile app . It allow us to reach wider audience.  Beside that, all Email and calls are secured with end-to-end encryption, it is very important for us to make sure all your data is safe.</p>
+                    <p class="question">為什麼使用 WHATSAPP?<br/>Why use WHATSAPP to trade?</p>
+                    <p class="answer a1">WHATSAPP 是受歡迎的即時通訊移動應用程序。 它使我們能夠覆蓋更廣泛的受眾。 除此之外，所有 WHATSAPP 訊息都經端對端加密保障，對我們來說確保你的數據安全是非常重要。</p>
+                    <p class="answer a1">WHATSAPP is the popular IM mobile app . It allow us to reach wider audience.  Beside that, all WHATSAPP and calls are secured with end-to-end encryption, it is very important for us to make sure all your data is safe.</p>
                 </div>
                 <div>
                     <button type="button" onclick="open_drop(this)" class="q2" href="#"></button>
@@ -264,9 +264,9 @@
                 </div>
                 <div>
                     <button type="button" onclick="open_drop(this)" class="q5" href="#"></button>
-                    <p class="question">如果交易在10分鐘內沒有完成會如何處理？<br/>What happen if the transaction not complete within 10 mins?</p>
-                    <p class="answer a5">如果10分鐘內不能成功付款，我們提供的價格不再有效。如果因網絡速度影響，10分鐘內沒法確認轉賬，轉賬確認後我們會給您一個新的報價，如果您不同意，所有的資金都會發送到您所提供的地址。你將需要支付此轉賬所產生的費用。</p>
-                    <p class="answer a5">If you cannot pay in 10 mins, the price we provided is no longer valid. If the network is slow and no confirmation from the network within 10 mins, we will give you a new quotation, if you do not agree,  all the fund will send  to the address you provided and you will need to pay for the fees. </p>
+                    <p class="question">如果交易在15分鐘內沒有完成會如何處理？<br/>What happen if the transaction not complete within 15 mins?</p>
+                    <p class="answer a5">如果15分鐘內不能成功付款，我們提供的價格不再有效。如果因網絡速度影響，15分鐘內沒法確認轉賬，轉賬確認後我們會給您一個新的報價，如果您不同意，所有的資金都會發送到您所提供的地址。你將需要支付此轉賬所產生的費用。</p>
+                    <p class="answer a5">If you cannot pay in 15 mins, the price we provided is no longer valid. If the network is slow and no confirmation from the network within 15 mins, we will give you a new quotation, if you do not agree,  all the fund will send  to the address you provided and you will need to pay for the fees. </p>
                 </div>
             </div>
 
@@ -284,7 +284,7 @@
 
     <footer>
         <h6>Copyright © tradecoin4u</h6>
-        <h4>免責聲明:  投資涉及風險，代幣價格有時會大幅波動，價格可升亦可跌，更可變得毫無價值。投資未必一定能夠賺取利潤，反而可能會招致損失，往績數字並非未來表現的指標。投資前應先閱讀有關產品的發售文件、財務及相關的風險聲明，.並應就本身的財政、其他狀況及需要詳細考慮並考慮決定投資是否切合本身特定的投資需要。<a href="#">了解更多>></a></h4>
+        <h4>免責聲明:  投資涉及風險，代幣價格有時會大幅波動，價格可升亦可跌，更可變得毫無價值。投資未必一定能夠賺取利潤，反而可能會招致損失，往績數字並非未來表現的指標。投資前應先閱讀有關產品的發售文件、財務及相關的風險聲明，.並應就本身的財政、其他狀況及需要詳細考慮並考慮決定投資是否切合本身特定的投資需要。<!--<a href="#">了解更多>></a>--></h4>
         <a href="#" class="back_top" href="#"></a>
         <a href="/terms" class="bottom_item1" href="#">服務條款<br/>&nbsp;&nbsp;Terms and Conditions </a>
         <a href="/aml" class="bottom_item2" href="#">防洗錢政策<br/>&nbsp;&nbsp;&nbsp;&nbsp;AML Policy </a>

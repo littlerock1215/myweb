@@ -647,16 +647,22 @@ p.subtitle {
       margin-bottom: 20px;
       margin-top: 46px; }
     .light_box form.apply_form .link {
-      width: 120px;
-      margin-left: calc((100% - 120px) / 2); }
+      width: 70%;
+      margin-left: 12%; }
       .light_box form.apply_form .link a {
-        display: block;
         margin: 0 auto;
-        text-align: left;
+        text-decoration: none;
+        border-radius: 10px;
+        background-color: black;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        display: block;
+        line-height: 24px;
         font-size: 24px;
-        color: #121212;
-        line-height: 34px;
-        text-decoration: none; }
+        display: inline-block;
+        padding: 10px 10px;
+        width: 100%; }
         .light_box form.apply_form .link a:hover {
           opacity: 0.5; }
         @media (max-width: 767px) {
