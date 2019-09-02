@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost:3307',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'tradecoin',
+	'hostname' => 'db01.coowo.com:3306',
+	'username' => 'tradecoin',
+	'password' => 'Ua96ea5!',
+	'database' => 'intersen_tradecoin4u',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

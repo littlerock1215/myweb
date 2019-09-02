@@ -132,6 +132,11 @@ header{
                 @include susy-breakpoint(('max-width':1023px)){
             
                     color:#ffffff;
+                    border-left:4px solid black;
+
+                    &:hover{
+                        border-left:4px solid white;
+                    }
                 }
                
                 @include susy-breakpoint($mobile){
@@ -1781,22 +1786,34 @@ footer{
         @include susy-breakpoint(('max-width':1200px)){
             
             right: auto;
-            left: 26%;
+            //left: 26%;
+            left: 33%;
+            transform: translateX(-74px);
+        }
+
+        @include susy-breakpoint($pad){
+            
+            left:30%;
         }
 
         @include susy-breakpoint(('max-width':767px)){
             
             right: auto;
-            left: 21%;
+            //left: 16%;
         }
 
         @include susy-breakpoint($mobile){
             
             font-size: 2px;
             line-height: 14px;
-            left: -1%;
+            left: 26%;
             background-size: 8px 8px;
             background-position: 110px 4px;
+        }
+
+        @include susy-breakpoint(('max-width':400px)){
+            
+            left:22%;
         }
     }
 
@@ -1823,7 +1840,16 @@ footer{
         @include susy-breakpoint(('max-width':1200px)){
             
             right: auto;
-            left: 44%;
+            //left: 44%;
+            left: 50%;
+            transform: translateX(-60px);
+        }
+
+        @include susy-breakpoint(('max-width':767px)){
+            
+            right: auto;
+            //left: 40%;
+
         }
 
         @include susy-breakpoint($mobile){
@@ -1831,7 +1857,7 @@ footer{
             font-size: 2px;
             line-height: 14px;
             background-size: 8px 8px;
-            left: 34%;
+            //left: 34%;
             background-position: 94px 4px;
         }
     }
