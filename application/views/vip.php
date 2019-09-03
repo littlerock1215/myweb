@@ -117,6 +117,7 @@
                         <input class="box_input" type="text" name="mobile" autocomplete="off" placeholder="yyyy/mm/dd" required>
                         <button class="submit" type="button" onclick="submit_form()">送出<br/>Submit</button>
                         
+                        
                     </form>
                 </div>
             </div>
@@ -130,7 +131,7 @@ function submit_form(){
                 buttons: {
                     confirm: function () {
 
-                        $.post('/price/send',$('form.apply_form').serialize(),function(data){
+                        $.post('/vip/vip_send',$('form.apply_form').serialize(),function(data){
 
                             console.log(data)
 
@@ -147,7 +148,7 @@ function submit_form(){
                                                 // if(data.success){
                                                 //     $('a.cancel').click();
                                                 // }
-                                                $('a.cancel').click();
+                                                //$('a.cancel').click();
                                             }
                                         },
                                     },
