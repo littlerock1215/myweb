@@ -46,7 +46,8 @@ class Welcome extends CI_Controller {
         foreach($result['data'] as $row):
 
             $new_hkd = $this->to_HKD($row['quote']['USD']['price'], $ratio);
-            $rows[$row['symbol']]['sell'] = $new_hkd * 1.015;
+            //$rows[$row['symbol']]['sell'] = $new_hkd * 1.015;
+            $rows[$row['symbol']]['sell'] = $new_hkd * 1.006 * 1.01;
 			$rows[$row['symbol']]['buy'] = $new_hkd;
             
         endforeach;

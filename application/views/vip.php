@@ -85,34 +85,36 @@
                         <input class="box_input employer" type="text" name="employer" autocomplete="off" required><br/>
                         <p class="title_long">職稱/職務<br/>Title/Position：</p><br/>
                         <input class="box_input employer" type="text" name="title" autocomplete="off" required>
-                        <p class="title_p">淨資產<br/>Net worth：</p><br/>
-                        <input  type="radio" name="net_worth" value="HK$0-100K">HK$0-100K<br/>
-                        <input  type="radio" name="net_worth" value="HK$100-500K">HK$100-500K<br/>
-                        <input  type="radio" name="net_worth" value="HK$500K-1mil">HK$500K-1mil<br/>
-                        <input  type="radio" name="net_worth" value="HK$1mil-5mil">HK$1mil-5mil<br/>
-                        <input  type="radio" name="net_worth" value="HK$5mil+">HK$5mil+<br/>
+                        <p class="title_long">淨資產<br/>Net worth：</p><br/>
+                        <input class="option" type="radio" name="net_worth" value="HK$0-100K"><span class="input_span">HK$0-100K</span><br/>
+                        <input class="option" type="radio" name="net_worth" value="HK$100-500K"><span class="input_span">HK$100-500K</span><br/>
+                        <input class="option"type="radio" name="net_worth" value="HK$500K-1mil"><span class="input_span">HK$500K-1mil</span><br/>
+                        <input class="option" type="radio" name="net_worth" value="HK$1mil-5mil"><span class="input_span">HK$1mil-5mil</span><br/>
+                        <input class="option" type="radio" name="net_worth" value="HK$5mil+"><span class="input_span">HK$5mil+</span><br/>
 
-                        <p class="title_p">流動資產淨值<br/>Liquid net worth：</p><br/>
-                        <input  type="radio" name="Liquid_net_worth" value="HK$0-100K">HK$0-100K<br/>
-                        <input  type="radio" name="Liquid_net_worth" value="HK$100-500K">HK$100-500K<br/>
-                        <input  type="radio" name="Liquid_net_worth" value="HK$500K-1mil">HK$500K-1mil<br/>
-                        <input  type="radio" name="Liquid_net_worth" value="HK$1mil-5mil">HK$1mil-5mil<br/>
-                        <input  type="radio" name="Liquid_net_worth" value="HK$5mil+">HK$5mil+<br/>
+                        <p class="title_long">流動資產淨值<br/>Liquid net worth：</p><br/>
+                        <input class="option" type="radio" name="Liquid_net_worth" value="HK$0-100K"><span class="input_span">HK$0-100K</span><br/>
+                        <input class="option" type="radio" name="Liquid_net_worth" value="HK$100-500K"><span class="input_span">HK$100-500K</span><br/>
+                        <input class="option" type="radio" name="Liquid_net_worth" value="HK$500K-1mil"><span class="input_span">HK$500K-1mil</span><br/>
+                        <input class="option" type="radio" name="Liquid_net_worth" value="HK$1mil-5mil"><span class="input_span">HK$1mil-5mil</span><br/>
+                        <input class="option" type="radio" name="Liquid_net_worth" value="HK$5mil+"><span class="input_span">HK$5mil+</span><br/>
 
-                        <p class="title_p">財富來源<br/>Sources of Wealth：</p><br/>
+                        <p class="title_long">財富來源<br/>Sources of Wealth：</p><br/>
                         
+                        <input class="custom_checkbox" type="checkbox" name="item[]" id="item1" value="投資"><label for="item1"><span></span><p class="item">投資<br/>Investment</p></label><br/>
+                        <input class="custom_checkbox" type="checkbox" name="item[]" id="item2" value="就業收入"><label for="item2"><span></span><p class="item">就業收入<br/>Employment income</p></label><br/>
+                        <input class="custom_checkbox" type="checkbox" name="item[]" id="item3" value="遺產"><label for="item3"><span></span><p class="item">遺產<br/>Inheritance</p></label><br/>
+                        <input class="custom_checkbox" type="checkbox" name="item[]" id="item4" value="其他"><label for="item4"><span></span><p class="item">其他<br/>The other：<input class="other" type="text" name="other" autocomplete="off"></p></label><br/>
                         
-                        
-                        
-                        <p class="title_p">預計每月交易金額<br/>Expected sum of monthly trade (E.g. HK$ 2mil)：</p>
-                        <input class="box_input" type="text" name="amount" autocomplete="off" required>
-                        <p class="title_p">聲明<br/>DECLARATION： </p>
-                        <p>本人謹此聲明，申請表內所提供的的各項資料均屬正確、完備及真實的，如日後作出任何更改將會即時通知Tradecoin4u。本人清楚及同意Tradecoin4u將會收集本人的資料作為防止清洗黑錢及恐怖分子融資活動的措施。本人在Tradecoin4u作出的交易並無跟任何洗黑錢、恐怖活動、恐怖分子融資活動或任何犯罪活動掛鈎，如觸犯上述活動，本人將會對Tradecoin4u的損失作出賠償。</p>
-                        <p>I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief and I undertake to inform you of any changes therein, immediately. In case of any of the above information is found to be false or untrue or misleading or misrepresenting. I am aware that I may be held liable for it. I understand and agree that Tradecoin4u will collect my information as a measure for preventing money laundering and terrorist financing. I am not doing any trades at Tradecoin4u with any money laundering, terrorist activities, terrorist financing activities or any criminal activity, and I will compensate the loss of Tradecoin4u if in violation of the above activities.</p>
-                        <p>在此聲明所有上述信息均屬真實無誤</p><br/>
-                        <p>I hereby declare that all the above information is true and correct</p><br/>
-                        <p class="title_p">日期<br/>Date：</p><br/>
-                        <input class="box_input" type="text" name="mobile" autocomplete="off" required>
+                        <p class="title_long">預計每月交易金額<br/>Expected sum of monthly trade (E.g. HK$ 2mil)：</p>
+                        <input class="box_input employer" type="text" name="amount" autocomplete="off" required>
+                        <p class="title_long">聲明<br/>DECLARATION： </p>
+                        <p class="declaration">本人謹此聲明，申請表內所提供的的各項資料均屬正確、完備及真實的，如日後作出任何更改將會即時通知Tradecoin4u。本人清楚及同意Tradecoin4u將會收集本人的資料作為防止清洗黑錢及恐怖分子融資活動的措施。本人在Tradecoin4u作出的交易並無跟任何洗黑錢、恐怖活動、恐怖分子融資活動或任何犯罪活動掛鈎，如觸犯上述活動，本人將會對Tradecoin4u的損失作出賠償。</p>
+                        <p class="declaration_en">I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief and I undertake to inform you of any changes therein, immediately. In case of any of the above information is found to be false or untrue or misleading or misrepresenting. I am aware that I may be held liable for it. I understand and agree that Tradecoin4u will collect my information as a measure for preventing money laundering and terrorist financing. I am not doing any trades at Tradecoin4u with any money laundering, terrorist activities, terrorist financing activities or any criminal activity, and I will compensate the loss of Tradecoin4u if in violation of the above activities.</p>
+                        <input class="check" type="checkbox" value="1" name="check">
+                        <p class="declaration_click">在此聲明所有上述信息均屬真實無誤<br/>I hereby declare that all the above information is true and correct</p><br/>
+                        <p class="title_p">日期<br/>Date：</p>
+                        <input class="box_input" type="text" name="mobile" autocomplete="off" placeholder="yyyy/mm/dd" required>
                         <button type="button" onclick="submit_form()">送出<br/>Submit</button>
                         
                     </form>

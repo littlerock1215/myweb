@@ -73,6 +73,11 @@ a.link_aml{
 p.title_p{
 
     font-size:20px;
+
+    @include susy-breakpoint($mobile){
+            
+        font-size: 12px;
+    }
 }
 
 p.title_long{
@@ -83,6 +88,7 @@ p.title_long{
     display:inline-block;
     margin-top: 46px;
     font-weight: 600;
+    //font-family: PingFangTC;
 
     span{
 
@@ -93,7 +99,6 @@ p.title_long{
             
         font-size: 10px;
         line-height: 20px;
-        width:60px;
         margin-top: 12px;
     }
 }
@@ -101,4 +106,212 @@ p.title_long{
 input.employer{
 
     margin-left: 106px;
+
+    @include susy-breakpoint($mobile){
+            
+        margin-left: 64px;
+    }
+}
+
+input.option{
+
+    margin-left:140px;
+
+    @include susy-breakpoint($mobile){
+            
+        margin-left: 64px;
+    }
+}
+
+span.input_span{
+
+    line-height: 36px;
+    margin-left:20px;
+    font-size: 20px;
+
+    @include susy-breakpoint($mobile){
+            
+        font-size: 10px;
+        line-height: 20px;
+    }
+}
+
+p.declaration{
+
+    margin-top:30px;
+    font-weight: 600;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+p.declaration_en{
+
+    font-weight: 600;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+input.check{
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 12px;
+}
+
+p.declaration_click{
+
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+    line-height: 22px;
+    display:inline-block;
+}
+
+input[type="checkbox"].custom_checkbox{
+
+    display:none;
+}
+
+input[type="checkbox"].custom_checkbox + label{
+
+    position:relative;
+    display:inline-block;
+    padding-left:22px;
+    margin-bottom:14px;
+    letter-spacing: 1px;
+    padding-top:1px;
+    //width:114px;
+    margin-left:140px;
+    
+    @include susy-breakpoint($mobile){
+        
+        font-size:16px;
+        margin-bottom: 15px;
+    }  
+
+    &:last-of-type{
+
+        margin-bottom:0;
+    }
+
+    a{
+
+        color:#ee3062;
+        display:inline-block;
+        text-decoration: none;
+        border-bottom:1px solid #ee3062;
+    }
+
+    span{
+
+        position:absolute;
+        width:15px;
+        height:15px;
+        border:1px solid #474747;
+        background:white;
+        border-radius: 2px;
+        top:50%;
+        left:0;
+        transform: translateY(-50%);
+    }
+}
+
+input[type="checkbox"].custom_checkbox:checked + label{
+
+    span{
+
+        background:black;
+
+        &:after{
+            position: absolute;
+            content: "";
+            display: block;
+            left: 5px;
+            top: 1px;
+            width: 4px;
+            height: 8px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);            
+        }
+    }
+}
+
+p.item{
+
+    margin-top: 16px;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+input.other{
+    
+    display:inline;
+    width:200px;
+    border: 0;
+    border-bottom: 1px solid #515151;
+    //height:34px;
+    padding-left:8px;
+    //margin-top: 16px;
+    line-height: 18px;
+
+    &:focus{
+
+        outline:none;
+    }
+
+    @include susy-breakpoint(('max-width':1100px)){
+            
+        width:70%;
+    }
+
+    @include susy-breakpoint($mobile){
+            
+        height: 20px;
+        font-size: 10px;
+        width:72%;
+    }
+}
+
+
+.light_box{
+
+    @include susy-breakpoint($pad){
+                
+        width:80%;
+    }
+
+    @include susy-breakpoint(('max-width':767px)){
+                
+        width:90%;
+    }
+
+
+    .box_top{
+
+        @include susy-breakpoint(('max-width':1200px)){
+                
+            font-size: 30px;
+            line-height: 36px;
+            padding-top: 32px;
+        }
+
+        @include susy-breakpoint($pad){
+                
+            height:auto;
+            min-height: 100px;
+        }
+
+        @include susy-breakpoint($mobile){
+                
+            font-size: 18px;
+            line-height: 26px;
+            padding: 20px;
+            min-height: auto;
+        }
+    }
 }
