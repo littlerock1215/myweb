@@ -115,7 +115,7 @@
                         <p class="declaration_click">在此聲明所有上述信息均屬真實無誤<br/>I hereby declare that all the above information is true and correct</p><br/>
                         <p class="title_p">日期<br/>Date：</p>
                         <input class="box_input" type="text" name="mobile" autocomplete="off" placeholder="yyyy/mm/dd" required>
-                        <button type="button" onclick="submit_form()">送出<br/>Submit</button>
+                        <button class="submit" type="button" onclick="submit_form()">送出<br/>Submit</button>
                         
                     </form>
                 </div>

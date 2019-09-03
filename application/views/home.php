@@ -128,7 +128,7 @@
                     <form class="apply_form">
                         <p class="first_content">請選擇您偏好的聯繫方式，我們會將報價單及轉帳地址以您選擇的方式發送給您<br/>Please select your preferred contact method and we will send you the quotation and transfer address in the way you choose.</p>
                         
-                        <p class="vip_p">Tradecoin4u 高級客戶認證<br/>交易量首次達到1百萬港元以上客戶需要填寫此表格<br/>For the all users who reach the transaction volume over HK$1 million.<br/>Customers need to fill out this form.</p>
+                        <p class="vip_p">Tradecoin4u 高級客戶認證<br/>交易量首次達到1百萬港元以上客戶需要填寫此<a href="/vip">表格</a><br/>For the all users who reach the transaction volume over HK$1 million.<br/>Customers need to fill out this <a href="/vip">form</a>.</p>
                         <div class="link">
                             <!-- <a href="/form">Email</a> -->
                             <a href="https://api.WhatsApp.com/send?phone=85264114188&text=%E6%88%91%E5%B0%8DCrptoExchange%E6%9C%89%E8%88%88%E8%B6%A3">WhatsApp</a>
