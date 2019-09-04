@@ -73,12 +73,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+// $db['default'] = array(
+// 	'dsn'	=> '',
+// 	'hostname' => 'db01.coowo.com:3306',
+// 	'username' => 'tradecoin',
+// 	'password' => 'Ua96ea5!',
+// 	'database' => 'intersen_tradecoin4u',
+// 	'dbdriver' => 'mysqli',
+// 	'dbprefix' => '',
+// 	'pconnect' => FALSE,
+// 	'db_debug' => (ENVIRONMENT !== 'production'),
+// 	'cache_on' => FALSE,
+// 	'cachedir' => '',
+// 	'char_set' => 'utf8',
+// 	'dbcollat' => 'utf8_general_ci',
+// 	'swap_pre' => '',
+// 	'encrypt' => FALSE,
+// 	'compress' => FALSE,
+// 	'stricton' => FALSE,
+// 	'failover' => array(),
+// 	'save_queries' => TRUE
+// );
+
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'db01.coowo.com:3306',
-	'username' => 'tradecoin',
-	'password' => 'Ua96ea5!',
-	'database' => 'intersen_tradecoin4u',
+	'hostname' => 'localhost:3307',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'tradecoin',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
