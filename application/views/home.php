@@ -177,56 +177,17 @@
                     <p>收價 <br/>We Buy</p>
                     <p>售價<br/>We Sell</p>
                 </div>
+                <?php
+                foreach($price_data as $row):
+                ?>
                 <li>
-                    <p>比特幣<br/>Bitcoin</p>
-                    <p>HK$ <?=number_format($price_data['BTC']['buy'],2)?></p>
-                    <p>HK$ <?=number_format($price_data['BTC']['sell'],2)?></p>
+                    <p><?=$row['ChineseName']?><br/><?=$row['Currency']?></p>
+                    <p>HK$ <?=number_format($row['BuyPriceHkd'],2)?></p>
+                    <p>HK$ <?=number_format($row['SellPriceHkd'],2)?></p>
                 </li>
-                <li>
-                    <p>以太幣<br/>Ethereum</p>
-                    <p>HK$ <?=number_format($price_data['ETH']['buy'],2)?></p>
-                    <p>HK$ <?=number_format($price_data['ETH']['sell'],2)?></p>
-                </li>
-                <li>
-                    <p>柚子幣<br/>EOS</p>
-                    <p>HK$ <?=number_format($price_data['EOS']['buy'],2)?></p>
-                    <p>HK$ <?=number_format($price_data['EOS']['sell'],2)?></p>
-                </li>
-                <li>
-                    <p>萊特幣<br/>Litecoin</p>
-                    <p>HK$ <?=number_format($price_data['LTC']['buy'],2)?></p>
-                    <p>HK$ <?=number_format($price_data['LTC']['sell'],2)?></p>
-                </li>
-                <li>
-                    <p>比特幣現金<br/>BCH</p>
-                    <p>HK$ <?=number_format($price_data['BCH']['buy'],2)?></p>
-                    <p>HK$ <?=number_format($price_data['BCH']['sell'],2)?></p>
-                </li>
-                <li>
-                    <p>瑞波幣<br/>Ripple</p>
-                    <p>HK$ <?=number_format($price_data['XRP']['buy'],2)?></p>
-                    <p>HK$ <?=number_format($price_data['XRP']['sell'],2)?></p>
-                </li>
-                <li>
-                    <p>Stellar<br/>(XLM)</p>
-                    <p>HK$ <?=number_format($price_data['XLM']['buy'],2)?></p>
-                    <p>HK$ <?=number_format($price_data['XLM']['sell'],2)?></p>
-                </li>
-                <li>
-                    <p>Cardano<br/>(ADA)</p>
-                    <p>HK$ <?=number_format($price_data['ADA']['buy'],2)?></p>
-                    <p>HK$ <?=number_format($price_data['ADA']['sell'],2)?></p>
-                </li>
-                <li>
-                    <p>達世幣<br/>Dash</p>
-                    <p>HK$ <?=number_format($price_data['DASH']['buy'],2)?></p>
-                    <p>HK$ <?=number_format($price_data['DASH']['sell'],2)?></p>
-                </li>
-                <li>
-                    <p>泰達幣<br/>USDT</p>
-                    <p>HK$ <?=number_format($price_data['USDT']['buy'],2)?></p>
-                    <p>HK$ <?=number_format($price_data['USDT']['sell'],2)?></p>
-                </li>
+                <?php
+                endforeach;
+                ?>
             </ul>
             <div class="p_block">
                 <p class="small_font">1.價格僅供參考,交易前請與客服確認<br/>Price is for reference only, please confirm with CS before trading.</p>

@@ -5,7 +5,8 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$data['price_data'] = $this->get_price();
+        $data['coinmarket_price_data'] = $this->get_price();
+		$data['price_data'] = $this->get_price_new();
 		$this->load->view('home',$data);
 	}
 	public function get_price()
@@ -87,4 +88,45 @@ class Welcome extends CI_Controller {
 
         return $ratio;
     }
+
+    public function get_price_new()
+    {
+        $url = 'http://34.80.37.223:9003/api/Tradecoin4uAPI/GetCurrencyRate';
+
+
+        $curl = curl_init(); // Get cURL resource
+        // Set cURL options
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $url,            // set the request URL
+            //CURLOPT_HTTPHEADER => $headers,     // set the headers 
+            CURLOPT_RETURNTRANSFER => 1,         // ask for raw response instead of bool
+            CURLOPT_SSL_VERIFYPEER => false      // must additional add this 
+        ));
+
+        $response = curl_exec($curl); // Send the request, save the response
+        //print_r(json_decode($response, true)); // print json decoded response
+        curl_close($curl); // Close request
+
+        $result = json_decode($response, true);
+        // endforeach;
+
+        // $ratio = $result['ListIGPrice'][0]['Price'];
+
+        // return $ratio;
+
+        $rows = $result['ListRate'];
+        // foreach($result['ListRate'] as $row):
+        //     $rows[$row['Currency']] = $row;
+        //     // $new_buyprice = $this->$row['ListRate']['0']['BuyPriceHkd'];
+        //     // $new_sellprice = $this->$row['ListRate']['0']['SellPriceHkd'];
+        //     // $Currency = $this->$rows['ListRate']['0']['currency'];
+        //     // $rows[$row['symbol']]['sell'] = $new_buyprice;
+		// 	// $rows[$row['symbol']]['buy'] = $new_sellprice;
+            
+        // endforeach;
+        //     log_message('error',json_encode($rows));
+        return $rows;
+    }
+
+
 }
