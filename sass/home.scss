@@ -1637,6 +1637,8 @@ p.circle_title_en{
             
             margin-bottom: 0;
             margin-top:26px;
+
+
         }
 
         @include susy-breakpoint(('max-width':767px)){
@@ -1645,6 +1647,11 @@ p.circle_title_en{
             line-height: 16px;
             margin-left: 0;
             width:100%;
+        }
+    }
+    .small_font:nth-child(3){
+        @include susy-breakpoint(('max-width':767px)){
+            margin-top:0px;
         }
     }
 
@@ -2023,5 +2030,69 @@ a.main_menu_hamburger{
         top:22px;
         width:20px;
         width:20px;
+    }
+}
+#contact_block{
+    #contact_small{
+        width: 260px;
+        border-radius: 5px;
+        background-color: black;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-top: 10px;
+        line-height: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 24px;
+        margin-right: 10px;
+        display: inline-block;
+        //margin-top: 60px;
+        margin-top: 250px;
+        margin-left: calc((100% - 800px) / 2);
+        position: initial;
+        top: initial;
+        margin-top:10px;
+        &:hover{
+    
+            background-color: #303030;
+            opacity: 0.8;
+        }
+        
+        @include susy-breakpoint(('max-width':1200px)){
+            
+            margin-left: 15%;
+            //margin-top: 270px;
+        }
+        @include susy-breakpoint(('max-width':767px)){
+            
+            border-radius: 20px;
+            margin-left: 0;
+            //margin-top: 290px;
+            //margin-top: 200px;
+        }
+    
+        @include susy-breakpoint($mobile){
+            
+            font-size: 12px;
+            line-height: 14px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            width: 70%;
+            border-radius: 10px;
+            margin: 10px auto 0;
+            //margin-top:250px;
+            height: 30px;
+            //margin-top: 220px;
+            margin-left: 15%;
+        }
+    }
+}
+
+p.tradetime{
+    @include susy-breakpoint(('max-width':767px)){
+            
+        margin-top:0;
     }
 }

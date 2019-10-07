@@ -237,8 +237,11 @@
             
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.458879417314!2d114.14740784988052!3d22.336295747161124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340407549c6dd40b%3A0x99b07632d57bb1b2!2z6aaZ5riv6ZW35rKZ54Gj6I2U5p6d6KeS6YGTODA46Jmf5aW96YGL5bel5qWt5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1567050999674!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             <p class="small_font">辦公室地址:九龍長沙灣荔枝角道808號好運工業中心10樓1005室<br/> Room 1005 Goodluck Industrial Centre, 808 Lai Chi Kok Road, KLN, HK</p>
-            <p class="small_font">店鋪地址:<br/>九龍太子港鐵站附近<br/>九龍美孚新村港鐵站附近<br/>新界元朗港鐵站附近<br/><br/> 報價及查詢店鋪地址<br/>請WhatsApp...</p>
-            <p class="small_font">交易時間：周一至周五12:00至18:00<br/> Trading Hours: Monday to Friday 12:00~18:00</p>
+            <p class="small_font">店鋪地址:<br/>九龍太子港鐵站附近<br/>九龍美孚新村港鐵站附近<br/>新界元朗港鐵站附近<br/><br/> 報價及查詢店鋪地址</p>
+            
+            <a href="https://api.WhatsApp.com/send?phone=85264114188&text=%E6%88%91%E5%B0%8DCrptoExchange%E6%9C%89%E8%88%88%E8%B6%A3" id="contact_small">聯絡我們<br/>Contact us</a>
+            <br/><br/>
+            <p class="small_font tradetime">交易時間：周一至周五12:00至18:00<br/> Trading Hours: Monday to Friday 12:00~18:00</p>
             <!-- <p class="small_font">交易時間：周一至周五12:00至18:00<br/> Trading Hours: Monday to Friday 12:00~23:00 | Weekend 9:00至23:00</p> -->
             <a class="fb1" href="https://api.WhatsApp.com/send?phone=85264114188&text=%E6%88%91%E5%B0%8DCrptoExchange%E6%9C%89%E8%88%88%E8%B6%A3"></a>
             <a class="fb2" href="#"></a>
