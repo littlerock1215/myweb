@@ -1643,7 +1643,7 @@ p.circle_title_en{
 
         @include susy-breakpoint(('max-width':767px)){
             
-            font-size: 4px;
+            font-size: 12px;
             line-height: 16px;
             margin-left: 0;
             width:100%;
@@ -1669,7 +1669,7 @@ p.circle_title_en{
         
         @include susy-breakpoint($mobile){
             
-            top:440px;
+            top:490px;
             background-size:20px 20px;
             background-position: 0 0;
             width:20px;
@@ -1693,6 +1693,7 @@ p.circle_title_en{
         @include susy-breakpoint(('max-width':1200px)){
             
             right:15%;
+            top:770px;
         }
 
         @include susy-breakpoint($pad){
@@ -1700,11 +1701,22 @@ p.circle_title_en{
             background-size:40px 40px;
             width:40px;
             height:40px;
+            top:824px;
+        }
+        @include susy-breakpoint(('max-width':800px)){
+            
+            right:15%;
+            top:850px;
+        }
+        @include susy-breakpoint(('max-width':767px)){
+            
+            top:536px;
         }
 
         @include susy-breakpoint($mobile){
             
             right:0%;
+            top: 490px;
         }
     }
 

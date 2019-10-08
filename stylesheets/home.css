@@ -1303,7 +1303,7 @@ p.circle_title_en {
         margin-top: 26px; } }
     @media (max-width: 767px) {
       #contact_block .small_font {
-        font-size: 4px;
+        font-size: 12px;
         line-height: 16px;
         margin-left: 0;
         width: 100%; } }
@@ -1320,7 +1320,7 @@ p.circle_title_en {
         top: 520px; } }
     @media (max-width: 550px) {
       #contact_block a {
-        top: 440px;
+        top: 490px;
         background-size: 20px 20px;
         background-position: 0 0;
         width: 20px;
@@ -1336,15 +1336,25 @@ p.circle_title_en {
       opacity: 0.8; }
     @media (max-width: 1200px) {
       #contact_block a.fb1 {
-        right: 15%; } }
+        right: 15%;
+        top: 770px; } }
     @media (max-width: 1023px) {
       #contact_block a.fb1 {
         background-size: 40px 40px;
         width: 40px;
-        height: 40px; } }
+        height: 40px;
+        top: 824px; } }
+    @media (max-width: 800px) {
+      #contact_block a.fb1 {
+        right: 15%;
+        top: 850px; } }
+    @media (max-width: 767px) {
+      #contact_block a.fb1 {
+        top: 536px; } }
     @media (max-width: 550px) {
       #contact_block a.fb1 {
-        right: 0%; } }
+        right: 0%;
+        top: 490px; } }
   #contact_block a.fb2 {
     right: calc(((100% - 800px) / 2) + 60px);
     display: none; }
