@@ -91,7 +91,7 @@ class Welcome extends CI_Controller {
 
     public function get_price_new()
     {
-        $url = 'http://34.80.37.223:9003/api/Tradecoin4uAPI/GetCurrencyRate';
+        $url = 'http://34.80.37.223:9003/api/Tradecoin4uAPI/GetCurrencyRate2';
 
 
         $curl = curl_init(); // Get cURL resource
