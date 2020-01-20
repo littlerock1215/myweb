@@ -28,13 +28,25 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        #whatsAppIcon {
+            position: fixed;
+            right: 20px;
+            bottom: 15px;
+            width: 48px;
+            height: auto;
+        }
+    </style>
+
     
 </head>
 
 <body>
     <header href="#goup" class="header clearfix">
         <a class="logo" href="#" title="Tradecoin4u"></a>
-        <button type="button" id="BackTop" class="top"></button>
+        <img id="whatsAppIcon" src="../images/whatsapp.png" alt="">
+        <button style="right: 20px;bottom: 75px;" type="button" id="BackTop" class="top"></button>
         
 
         <a href="/" class="main_menu_hamburger" title="手機選單">
@@ -260,6 +272,11 @@
 <script>
 $(document).ready(function(){
     //top button
+    $("#whatsAppIcon").click(function () {
+                window.open(
+                    'https://reurl.cc/4g0WvX',
+                    '_blank')
+            });
 
     $('#BackTop').click(function(){ 
 		$('html,body').animate({scrollTop:0}, 333);
